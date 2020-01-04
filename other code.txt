@@ -1,0 +1,3 @@
+background-image: url('profilePic.png');
+	background-attachment: fixed;
+        background-size: cover;
