@@ -2,17 +2,21 @@
 /* CSS Document */
 
 :root{
-	--background-color: #006635;/*#629c63;/*#36ad38;/**/
-	--header-border-color: #636125;/*Dark Gold #6F6D2A;/*#b5c27e;/*#565920;/*#595c2e; /*#7c803e;/**/
 	--font-color: white;
 	--font: sans-serif;
-	--Necronomicon-bkg-col: #770000;/*Dark Red#9c3e3e;/*Bright Red background *//*#3b5861;/* < light gray/blue  #19333b;/*<- dark blue #175467;*/
-	--Lullaby-bkg-col: #3c1361;/*Dark Purple #3b5861; /*Bright Dark Blue / Gray background*/
-	--Collateral-bkg-col: #c7882a;
-	--Bleak-bkg-col: #345eeb;
-	--GADIG-bkg-col: #1F1F1F;
 
-	--tile-color: #b4bd80;	/* Background color for main page's (index's) tiles*/
+	/*Index Background Colors*/
+	--background-color: #006635;      	/*Dark Green*/
+	--header-border-color: #808000; 	/*Olive*/
+	--tile-color: #b4bd80;			/*Bkg color for index's tiles*/
+
+
+	/*Text Background Colors*/
+	--Necronomicon-bkg-col: #770000;  	/*Dark Red*/
+	--Lullaby-bkg-col: #3c1361; 	  	/*Dark Purple*/
+	--Collateral-bkg-col: #c7882a;		/*Yellow-Gold*/
+	--Bleak-bkg-col: #345eeb;		/*Light Blue*/
+	--GADIG-bkg-col: #2f2f2f;		/*Dark Gray*/	
 	
 }
 
