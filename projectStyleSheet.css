@@ -16,7 +16,7 @@
 	--Lullaby-bkg-col: #3c1361; 	  	/*Dark Purple*/
 	--Collateral-bkg-col: #c7882a;		/*Yellow-Gold*/
 	--Bleak-bkg-col: #345eeb;		/*Light Blue*/
-	--GADIG-bkg-col: #2f2f2f;		/*Dark Gray*/
+	--GADIG-bkg-col: #2f2f2f;		/*Dark Gray*/	
 	--Taskify-bkg-col: #8656b0;		/*Light Purple*/
 	--MMMM-bkg-col: #c41bc2;		/*Pink*/
 }
@@ -98,7 +98,7 @@ body{
 }
 
 .parallax{
-	height: 100%; /*this should be 100*/
+	height: 100%; /*this should be 100%*/
 
 	background-attachment: fixed;
 	background-position: center;
