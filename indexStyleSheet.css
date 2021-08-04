@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root{
+	--font-color: white;
+	--font: sans-serif;
+
+	/*Index Background Colors*/
+	--background-color: #006635;      	/*Dark Green*/
+	--header-border-color: #808000; 	/*Olive*/
+	--tile-color: #b4bd80;			/*Bkg color for index's tiles*/
+
+
+	/*Text Background Colors*/
+	--Necronomicon-bkg-col: #770000;  	/*Dark Red*/
+	--Lullaby-bkg-col: #3c1361; 	  	/*Dark Purple*/
+	--Collateral-bkg-col: #c7882a;		/*Yellow-Gold*/
+	--Bleak-bkg-col: #345eeb;		/*Bold Light Blue*/
+	--GADIG-bkg-col: #2f2f2f;		/*Dark Gray*/	
+	--ExperimentIn-bkg-col: #8656b0;	/*Light Purple*/
+	--MMMM-bkg-col: #c41bc2;		/*Pink*/
+	--AotMC-bkg-col: #2d9de3;		/*Light Blue*/
+
+}
+
+/*Titles: the top of the page*/
+h1{
+	font-size: 40px;
+	text-align: center;
+}
+
+/*Contact Info:  will have to adjust margins & padding for screen size later*/
+h2{
+	font-size: 18px;
+	text-align: center;
+	background-color: var(--header-border-color);
+	
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+/*Contains both the Profile Pic and Bio*/
+h5{
+	background-color: var(--background-color);
+	font-size: 16px;
+	float: left;
+	margin-left: 20%;
+	padding-right: 10%;
+	
+}
+
+/*Profile Pic*/
+h5 img{
+	margin-right: 20px;
+	margin-left: 15px;
+	padding-bottom: 15px;	
+
+	width: 213px;
+	height: 354px;
+	float: left;
+	
+}
+
+/*Quick Bio*/
+.bio{
+	padding-top: 10%;
+	padding-left: 25%;
+	padding-right: 17%;
+}
+
+/*Tile Images for projects I've worked on*/
+.col img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/*Columns (that contain tiles) for projects I've worked on*/
+.col{
+	/*Sizing and Formatting*/
+	width: 250px; 		/*width: 25.33%;*/
+	height: 250px;		/*height: 25.33%;*/
+	float: left;
+	padding: 2%; 		/* How much space there is inside the box*/
+
+	display: block;
+
+	/*Font*/
+	font-size: 18px;
+	text-align: center;
+
+	/*Border*/
+	margin-left: 4%;
+	margin-top: 1%;
+	margin-bottom: 2%;		/* Amount of space inbetween each box	 */
+	border: 2px solid white;
+	border-radius: 35px;
+}
+
+
+/*"Body" Background of the webpage*/
+body{
+	background-color: var(--background-color); /* Dark Green */
+
+	/*Borders and Alignment*/
+	margin-left: 20%;
+	margin-right: 20%;
+
+
+	/*Font*/
+	color: var(--font-color);
+	font-family: var(--font);
+}
+
+
+/*Smaller Web Browser*/
+@media(max-width:1360px){
+	h1{
+		font-size: 32px;
+	}
+	
+	h2{
+		font-size: 16px;
+	}
+	
+	h5 img{
+		float: none;
+		text-align: center;
+		height: auto;
+		padding-bottom: 5px;
+		
+		/* Centering the Image */
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 40%;
+
+		/* Adjusting to ensure it's centered */
+		padding-right:15%;
+	}
+	.bio{
+		font-size:16px;
+		text-align: center;
+		padding-top: 5%;
+		padding-left: 0%;
+		padding-right:0%;
+		width: 80%;
+	}
+	
+}
+
+/*Half Window Web Browser*/
+@media(max-width:1080px){
+	.col{
+		margin-left: 25%;
+		height: 40%;
+	}
+
+	.col img{
+		width: 60%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+/*Tablet Sized*/
+@media(max-width:856px){
+	h1{
+		font-size: 32px;
+	}
+	
+	h2{
+		font-size: 12px;
+	}
+	
+	h5 img{
+		float: none;
+		text-align: center;
+		height: auto;
+		padding-bottom: 5px;
+		
+		/* Centering the Image */
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 40%;
+
+		/* Adjusting to ensure it's centered */
+		padding-right:15%;
+	}
+	.bio{
+		font-size:12px;
+		text-align: center;
+		padding-top: 5%;
+		padding-left: 0%;
+		padding-right:0%;
+		width: 80%;
+	}
+	
+	.col{
+		/*Sizing and Formatting*/
+		width: 40%;
+		height: 40%;
+		float: left;
+
+
+		/*Font*/
+		font-size: 16px;
+
+		/*Border*/
+		/*margin-left: 1%; margin-right: 1%;*/
+		margin-bottom: 4%;
+	}
+	
+	.col img{
+		width: 60%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+/*Smaller Tablet Sized*/
+/*@media(max-width:*/
+
+
+/*Mobile Sized*/
+@media(max-width:520px){
+	h2{
+		font-size: 10px;
+	}
+
+	.bio{
+		font-size: 10px;
+	}
+
+	h5 img{
+		padding-bottom: 0px;
+	}
+
+	.col{
+		font-size: 10px;
+	}
+	
+}

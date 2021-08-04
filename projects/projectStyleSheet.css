@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root{
+	--font-color: white;		 
+	--font: sans-serif;
+
+	/*Index Background Colors*/
+	--background-color: #006635;      	/*Dark Green*/
+	--header-border-color: #636125;   	/*Dark Gold*/
+	--tile-color: #b4bd80;			/*Bkg color for index's tiles*/
+
+
+	/*Text Background Colors*/
+	--Necronomicon-bkg-col: #770000;  	/*Dark Red*/
+	--Lullaby-bkg-col: #3c1361; 	  	/*Dark Purple*/
+	--Collateral-bkg-col: #c7882a;		/*Yellow-Gold*/
+	--Bleak-bkg-col: #345eeb;		/*Bold Light Blue*/
+	--GADIG-bkg-col: #2f2f2f;		/*Dark Gray*/	
+	--ExperimentIn-bkg-col: #8656b0;	/*Light Purple*/
+	--MMMM-bkg-col: #c41bc2;		/*Pink*/
+	--AotMC-bkg-col: #2d9de3;		/*Light Blue*/
+}
+
+/*Titles: the top of the page*/
+h1{
+	font-size: 40px;
+	text-align: center;
+}
+
+/*Contact Info:  will have to adjust margins & padding for screen size later*/
+h2{
+	font-size: 20px;
+	text-align: center;
+	background-color: var(--header-border-color);
+	
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+
+
+/*Project Descriptions - text boxes will have to adjust for page size*/
+.ptext{
+	background-color: var(--Necronomicon-bkg-col);
+	margin-left: 0%;
+	margin-right: 0%;
+	padding: 2%;
+
+	font-size: 16px;
+	color: white;
+	border: 1px none white;
+	border-radius: 5px;
+}
+
+/*Project Images*/
+.pImage{
+	margin-left: 10%;
+	margin-right:10%;
+	padding:2%;
+	font-size:18px;	
+}
+
+/*Project Section Header*/
+/*Used only to underline the "mini-header" of a section*/
+.pHeader{
+	text-decoration: underline;
+}
+
+/*Puts all text in the center of the screen.  Used as it's own class 
+to add it's own unique tags for each iteration of it (eg: change font size
+in the middle of a string of text; etc.)*/
+.center{
+	text-align: center;
+}
+
+/*Navigation Menu Text*/
+nav ul li{
+	list-style-type: none;
+	padding-left: 20px;
+	text-align: right;
+	float: right;
+}
+
+/*Navigation Menu Hyperlinks*/
+nav ul li a{
+	text-decoration:none;
+	color: white;
+	
+}
+
+/*"Body" Background of the webpage*/
+body{
+	background-color: var(--background-color); /* Dark Green */
+
+	/*Borders and Alignment*/
+	margin-left: 20%;
+	margin-right: 20%;
+
+
+	/*Font*/
+	color: var(--font-color);
+	font-family: var(--font);
+}
+
+.parallax{
+	height: 100%; /*this should be 100%*/
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+/*Smaller Web Browser*/
+@media(max-width:830px){
+	h1{
+		font-size: 28px;
+	}
+	
+	h2{
+		font-size: 16px;
+	}
+	
+	ptext{
+		font-size: 14px;
+	}
+
+	body{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+
+/*Mobile Sized*/
+@media(max-width:560px){
+	h2{
+		color: blue;
+		font-size: 100000px;
+	}
+
+	.bio{
+		font-size: 10px;
+	}
+
+	ptext{
+		font-size: 78px;
+	}
+
+	body{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+}
