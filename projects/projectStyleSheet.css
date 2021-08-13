@@ -108,12 +108,12 @@ body{
 .parallax{
 	height: 100%; /*this should be 100%*/
 
-	background-attachment: fixed;
+	position: relative;
+	background-attachment: fixed; /* This is what makes it parallax*/
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
 
 
 /*Smaller Web Browser*/
