@@ -63,6 +63,7 @@ h5 img{
 	
 }
 
+
 /*Quick Bio*/
 .bio{
 	padding-top: 10%;
@@ -200,7 +201,7 @@ body{
 		padding-right:0%;
 		width: 80%;
 	}
-	
+
 	.col{
 		/*Sizing and Formatting*/
 		width: 40%;
