@@ -29,8 +29,8 @@
 		<div class = "center" style = "text-decoration: underline;"> Game Synopsis </div>
 		<br>
 		Your party just got to the end of the dungeon and is reaping the rewards!  Only, you and your party took too long talking 
-		about what you would do with your share of the loot and...  the dungeon just reset.  Not you have to face the monsters of 
-		the dungeon all over again.  It's been a long rest already, so grab a weapon and get back into combat!
+		about what you would do with your share of the loot and...  the dungeon just reset.  Now you must combat your way through
+		the dungeon all. Over. Again.  You've had a long rest already, so grab a weapon and take initative.  It's time to fight your way out!
 		<br>
 		<br>
 		There are 2 different teams with their own goals:
@@ -62,13 +62,10 @@
 		<br>
 		<div class = "center" style = "text-decoration: underline;"> Other Notes </div>
 		<br>
-		This game was primarily designed with the intention to teach members of my team, the <i> <a href = "https://www.gmu.edu/org/gadig/" style = 
-		"color: white;"> Game Analysis and Design Interest Group (GADIG)</a></i>, about how to work in Core and programming in Lua. Thus, my goal with
-		this game was not to reach a minimum vialble product, but rather to further both my own understanding of Core as well as GADIG's. 
+		The creation of this game was intended to teach members of my team, the <i> <a href = "https://www.gmu.edu/org/gadig/" style = "color: white;"> Game Analysis and Design Interest Group (GADIG)</a></i>, about how to work in Core and programming in Lua. Thus, my goal with this game was not to reach a minimum vialble product, but rather to further both my own understanding of Core as well as GADIG's. The game GADIG worked on, <i><a href = "CollateralDamage.html" style = "color: white">Collateral Damage, can be found here.</a></i>
 		<br> 
 		<br>
-		While I did ultimately end up finishing a beta version of the game, as of right now I do not have any plans to continue developing 
-		Bleak.  This does not mean I will completely hault development, just that I don't intend to in the forseeable future.  
+		While I did finish a beta version of the game, I do not have any plans to continue developing Bleak as this was meant to be an educational experience.
 	</div>
 	
 	<br>
@@ -97,14 +94,13 @@
 	<div class = "ptext" style = "background: var(--Bleak-bkg-col);">
 		<div class = "pHeader"> Functioning Melee and Ranged Weapons </div>
 		<br>
-		I ended up designing several of my own unique weapons for Bleak.  My intention was to design a game where each team would be 
+		I ended up designing several of my own unique weapons for Bleak. My intention was to design a game where each team would be 
 		comprised of players with their own simple, unique, and distinct roles depending on their choice of weapons.
 		<br>
 		<br>
-		However, I wanted players to have an easy transition between each role.  So, I designed each weapon to have three different 
-		abilities:  at least one attack ability and a dash or speed boost.  The third ability would cater to each specific
-		weapon.  The third ability could be anything from a reload function, to another attack that can combot off of the first attack,
-		or even an extra movement ability.
+		I wanted players to have an easy transition between each role. I designed each weapon to have three different 
+		abilities:  at least one attack ability and a dash or speed boost. The third ability would be unique to each
+		weapon.
 		<br>
 		<br>
 		<br>
@@ -118,15 +114,11 @@
 		<br>
 		<div class = "pHeader"> Importing and Creating Weapons</div>
 		<br>
-		One of the appeals of Core is implementing assets from other people's games into yours.  Luckily I was able to do just that with
-		Bleak.  After acquiring assets from some of Core's other games, I dove into the weapons code to modify and balance them for my
-		game.
+		One appeal of Core is implementing assets from other games into yours. I was able to do just that with Bleak. After acquiring assets from some of Core's other games, I dove into the weapons code to modify and balance them for my game.
 		<br>
 		<br>
-		My favorite weapon that I designed would have to be the Focus of Air as depicted below.  This Focus would throw out bursts of 
-		air that, if they didn't hit an enemy, would ricochet off of the walls for several seconds or until they hit an enemy. Thus, 
-		using multiple bursts of air could result in haivng control over an area for a certain period of time.  I balanced this out 
-		by limiting the amount of damage they dealt.	
+		The most unique weapon I designed would have to be the Focus of Air as shown below. This focus would throw out bursts of 
+		air that could ricochet off the walls. Thus, using multiple bursts of air could result in haivng control over an area for a certain period of time.  I balanced this out by limiting the amount of damage they dealt.	
 	</div>
 
 	
@@ -137,27 +129,20 @@
 	<div class = "ptext" style = "background: var(--Bleak-bkg-col);">
 		<div class = "pHeader"> Level Design </div>
 		<br>
-		I had a specific idea in mind for when I designed Bleak's map:  a labyrinth-like dungeon that's difficult to navigate.  I wanted 				to convey the idea that this map is a place to be explored, from the various enemy AI's and small traps all the to the 
+		I had a specific idea in mind for when I designed Bleak's map: a labyrinth-like dungeon that's difficult to navigate.  I wanted to convey the idea that this map is a place to be explored, from the various enemy AI's and small traps all the to the 
 		underwater pond.  
 		<br>
 		<br>
 		<br>
 		<div class = "pHeader"> Pseudo Fog of War System </div>
 		<br>
-		As Bleak is heavily inspired by MOBAs and is centered around a labrynth like map, I wanted to implement a fog of war effect into the game.
-		This would add a sense of realism to Bleak's setting of a labrinth-like dungeon <i> and </i> make the game more interesting from a gameplay
-		perspective. 
+		As Bleak is heavily inspired by MOBAs and is centered around a labrynth like map, I wanted to implement a fog of war effect into the game. This added a sense of realism to Bleak's setting of a labrinth-like dungeon <i> and </i> make the game more interesting from a gameplay	perspective. 
 		<br>
 		<br>
-		There were a few complications to this while working in Core.  One is that there's no inherent way to hinder the player's vision without 
-		affecting the PC's performance.  Another is that I only wanted to apply this effect to the team that is stuck tyring to escape the map.  
-		This is to force them to use light-based weapons in order to figure out how to escape.
+		There were a few complications to this while working in Core. One is that there's no inherent way to hinder the player's vision without affecting the PC's performance. Another is that I only wanted to apply this effect to the team that is stuck tyring to escape the map. This would them to use light-based weapons in order to figure out how to escape.
 		<br>
 		<br>
-		To work around these problems, I concluded with this workaround to Core's issues.  First, I chose to create several heavy fog effects that 	
-		would persist throughout the entire map.  Second, I dimmed the lighting of the entire map to be <i> almost </i> impossible to see where you are 
-		going.  Lastly, I chose to give light-emmitting weapons to only the party trying to escape the dungeon.  That way the enemy team could 
-		essentially hunt down the team trying to escape without getting caught themselves.
+		I figured out a way workaround this. First, I chose to create several heavy fog effects that would persist throughout the entire map. Second, I dimmed the lighting of the entire map so it would be difficult to navigate. Lastly, I chose to give light-emmitting weapons to only the party trying to escape the dungeon. That way, the monster team could hunt down the team trying to escape without getting caught themselves.
 	</div>
 
 
@@ -201,17 +186,13 @@
 	<div class = "ptext" style = "background-color: var(--Bleak-bkg-col);">
 		<div class = "pHeader"> What I learned </div>
 		<br>
-		Much like whlie working on <i><a href = "CollateralDamage.html" style = "color: white"> Collateral Damage</a></i>, I learned a lot about having to
-		work around various in-engine issues and putting together a hodge podge of ideas and systems to create the game I intended to make.
+		I learned a lot about having to work around various in-engine issues and putting together a hodge podge of ideas and systems to create the game I intended to make.
 		<br>
 		<br>
-		From developing Bleak, I learned how to implement UI in an unfamiliar engine from scratch as well as how different systems interact with each
-		other (i.e. how weapons, abilities, and UI interact and synergize in game).
+		I learned how to implement UI in an unfamiliar engine from scratch as well as how different systems interact with each other (i.e. how weapons, abilities, and UI interact and synergize in game).
 		<br>
 		<br>
-		Since this is also the first game I developed where I was more than just the programmer, I also learned a lot about how the themes of a game 
-		can help influence design decisions and how they impact gameplay.  In a broader sense, I achieved a better understanding of how thematic ideas
-		affect the funciton, design, and the aesthetics of its software.  
+		As a designer, I learned a lot about how the themes of a game can help influence design decisions and how they impact gameplay.  In a broader sense, I achieved a better understanding of how thematic ideas affect the funciton, design, and the aesthetics of its software.  
 	</div>
 
 	<br>
@@ -220,28 +201,26 @@
 
 	<div class = "ptext" style = "background-color: var(--Bleak-bkg-col);">
 		<div class = "pHeader"> Closing Thoughts </div>
+		<!--
 		<br>
 		If I were to come back to Bleak, I would definitely do what I can to improve the UI as much as possible.  One of the most finicky things about
 		Core is having to develop and modify the player's GUI.
 		<br>
 		<br>
 		I would also like to have cleaned up the code and interfacing for some of the weapons and UI elements.  Core's ability to interface with 
-		different systems scarcely works as intended.  My goal for making Bleak was to teach my team's programmers, thus this was something I 
-		did not have the time to fix up. 
-		<br>
-		<br>
+		different systems scarcely works as intended.  My goal for making Bleak was to teach my team's programmers, thus this was something I did not have the time to fix up.
+		<br> -->
+		<br> 
 		I was able to use the development of this game as a sort of tutorial for my team so that they could better contribute to developing our game:
-		<i><a href = "CollateralDamage.html" style = "color: white;"> Collateral Damage</a></i>.  While working in Core was definitely an interesting
-		experience, I'm not entirely certain if I would return to it.  Until certain features are fixed and streamlined, I do not have plans to 
-		develop more games in Core.  
+		<i><a href = "CollateralDamage.html" style = "color: white;"> Collateral Damage</a></i>.  
+
+		<!--While working in Core was definitely an interesting experience, I'm not entirely certain if I would return to it.  Until certain features are fixed and streamlined, I do not have plans to develop more games in Core.  -->
 		<br>
 		<br>
-		However, I feel a lot more comfortable in tackling new systems and software development engines and definitely look forward to doing so in the
+		I feel a lot more comfortable in tackling new systems and software development engines and definitely look forward to doing so in the
 		future!  Despite my gripes with Core, learning an entirely new and foreign engine was a lot more fun than I anticipated.
 	</div>
 
-	<br>
-	<br>
 	<br>
 	<br>
 
