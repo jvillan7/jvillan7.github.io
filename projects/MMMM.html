@@ -24,42 +24,34 @@
 	<!-- <h1> Morgs Mimics and Mansion Munchables </h1> -->
 	<br>
 	
-	<div class = "parallax" style = "background-image: url('images/MMMM/MMMMBackgroundArt.png');"> <div>
+	<div class = "parallax" style = "background-image: url('images/MMMM/MMMMBackgroundArt.png');"> 
 
-	<div class = "pImage" style = "text-align:center;">
-		<a href = "https://gadig.itch.io/morgs-mimics">
-			<img src = "images/MMMM/MMMMLogo.png" style = "width: 60%; height: auto;" 
-				alt = "Morgs Mimcs and Mansion Munchables" title = "Morgs Mimcs and Mansion Munchables">
-		</a>
-		<br>
-		<br>
+		<div class = "pImage" style = "text-align:center;">
+			<a href = "https://gadig.itch.io/morgs-mimics">
+				<img src = "images/MMMM/MMMMLogo.png" style = "width: 60%; height: auto;" 
+					alt = "Morgs Mimcs and Mansion Munchables" title = "Morgs Mimcs and Mansion Munchables">
+			</a>
+			<br>
+			<br>
+		</div>
+
+		<!-- Game Info -->
+		<div class = "ptext" style = "background: var(--MMMM-bkg-col); margin: 2% 8%">
+			<div class = "center" style = "text-decoration: underline;"> Game Synopsis </div>
+			<br>
+			In Morgs Mimics and Mansions Munchables (MMMM) you play as Morg, a mimic who wants to overthrow the current Mimic Monarch to seize the throne! You must amass a large enough base of followers and prove to them that you can provide a steady source of food, humans.
+			<br>
+			<br>
+			<div class = "center" style = "text-decoration: underline;"> More Info </div>
+			<br> Platform: PC
+			<br> Devlopment Engine: Unity
+			<br> Languages: C#
+			<br> Source Control: Git
+			<br> Development Window: September 2020 - December 2020 (Fall Semester of 2020)
+			<br> Group: The Game Analysis and Development Interest Group (GADIG)
+		</div>
+
 	</div>
-
-
-	<br>
-	<br>
-
-	<!-- Game Info -->
-	<div class = "ptext" style = "background: var(--MMMM-bkg-col); margin: 2% 8%">
-		<div class = "center" style = "text-decoration: underline;"> Game Synopsis </div>
-		<br>
-		Morgs Mimics and Mansions Munchables (MMMM) is a game where you play as Morg,
-	a mimic who wants to overthrow the current Mimic Monarch to seize the throne! To do 
-	so, you must amass a large enough base of followers and prove to them that you can 
-	provide a steady source of food, humans.
-		<br>
-		<br>
-		<div class = "center" style = "text-decoration: underline;"> More Info </div>
-		<br> Platform: PC
-		<br> Devlopment Engine: Unity
-		<br> Languages: C#
-		<br> Source Control: Git
-		<br> Development Window: September 2020 - December 2020 (Fall Semester of 2020)
-		<br> Group: The Game Analysis and Development Interest Group (GADIG)
-	</div>
-
-	<br>
-	<br>
 
 	<!-- My Contributions -->
 	<div class = "ptext" style = "background: var(--MMMM-bkg-col); margin: 2% 8%">
@@ -86,184 +78,137 @@
 		<tab style = "text-decoration: underline;"> Task Distribution </tab>
 		<br>
 		<br>
-		When we first started making MMMM, I took initiative in becoming the lead programmer
-		in designing each of the various Mimics to be implemented in the game. At the time, 
-		our design team was stil determining the types of mimics they wanted to see in the 
-		game. So, I directed a small sub team of programmers to make a generic, polymorphic 
-		mimic interface to be used by all other mimic classes. 
+		When we first started making MMMM, I took initiative in becoming the lead programmer in designing each of the various mimics to be implemented in the game. Our design team was still determining the different types of mimics can do. So, I directed a small subteam of programmers to make a generic, polymorphic mimic interface to be used by all other mimic classes. 
 		<br>
 		<br>
-		<a href = "images/MMMM/InitialPlanning.png">Here</a> was my inital plan for the 
-		overall workflow of our project. Because I was the only one on my team with experience
-		in Unity and C#, 
-		<a href = "images/MMMM/InitialSources.png">this</a> was my inital idea of where my
-		team members could start doing research.  
-		<br>
-		<br>
-		Unfortunately my teammates eventually became unavailable due to their external 
-		commitments and stopped contributing before they could start. Thus, I 
-		shouldered the workload on my own.  
+		<a href = "images/MMMM/InitialPlanning.png"><i style="color: white;">This image</i></a> shows my inital plan for the 
+		project's workflow. Because I was the only one on my subteam with experience in Unity and C#, 
+		<a href = "images/MMMM/InitialSources.png"><i style = "color: white;">this image</i></a> shows how I guided my team to start doing research. Because my teammates left due to external circumstances, I shouldered the entire workload on my own.
 		<br>
 		<br>
 		<br>
 		<tab style = "text-decoration: underline;"> Programming Generic Mimics </tab>
 		<br>
 		<br>
-		The difficulty in programming a generic mimic interface was that could accomodate for 
-		whatever Design Team would throw at me. I knew that Design Team would most likely
-		design mimics that change and alter how mimics behave, so I wanted to make sure 
-		we first had a baseline of what mimics should do.
+		The difficulty in programming a mimic interface was to ensure it could accomodate for whatever Design Team threw at me. I wanted to ensure there was a baseline of what all mimics could do.	
 		<br>
 		<br>
-		<br>
-		After talking with Design Team, we determined mimics must:
-		<br> - Look for humans to eat
-		<br> - Attempt to eat nearby humans 
+		Mimics shall:
+		<br> - Look for humans to eat and attempt to eat them
 		<br> - Take some amount of time to eat humans
-		<br> - Take some amount of time digesting its food before it can look for humans 
-		to eat again
-		<br>
+		<br> - Take some amount of time digesting its food before it can look for humans to eat again
 		<br>
 		<br> 
-		With all of this in mind, I created different mimic 'states' utilizing a combination
-		of enums and booleans to determine what a the current state a mimic was in. Each
-		type of mimic would likely have their own unique eating and digesting times.  So, I
-		made sure to make those variables customizable for when we make unique mimics. I also
-		included an attack range for mimics because that could easily change from unique mimic 
-		to mimic.
-		<br>
-		<br>
-		All that was left was to wait and see what unique mimics Design Team would come up with
-		so I could program them.
+		Thus, I created different mimic 'states,' utilizing enums and booleans to determine a mimic's current state. Each mimic type would <i>likely</i> have their own unique eating and digesting times. So, I made sure to make those values easily customizable. I also included an modifiable attack range for mimics since it could easily be unique to each mimic type.
 	</div>	
 
 	
 	<br>
 	<br>
 
-	<div class = "parallax" style = "background-image: url('images/MMMM/MMMMBackgroundArt.png');"> <div>
+	<div class = "parallax" style = "background-image: url('images/MMMM/MMMMBackgroundArt.png');"> 
 
-	<br>
-	<br>
+		<br>
+		<br>
 
-	<!-- Gif of the Skitter Mimic -->
-	<div class = "pImage" style = "text-align:center;">
-		<a href = "images/MMMM/SkitterMimic.gif">    <!-- "https://gadig.itch.io/morgs-mimics"> -->
-			<img src = "images/MMMM/SkitterMimic.gif" style = "width: 60%; height: auto;" 
-				alt = "Skitter Mimic" title = "Skitter Mimic">
-		</a>
+		<!-- Gif of the Skitter Mimic -->
+		<div class = "pImage" style = "text-align:center;">
+			<a href = "images/MMMM/SkitterMimic.gif">    <!-- "https://gadig.itch.io/morgs-mimics"> -->
+				<img src = "images/MMMM/SkitterMimic.gif" style = "width: 60%; height: auto;" 
+					alt = "Skitter Mimic" title = "Skitter Mimic">
+			</a>
+		</div>
+
+		<br>
+		<br>
+
+		<!-- Skitter Mimic -->
+		<div class = "ptext" style = "background: var(--MMMM-bkg-col); margin: 2% 8%;">
+			<tab style = "text-decoration: underline;"> Starting with the Skitter Mimic </tab>
+			<br>
+			<br>
+			The first mimic type I got to program was the Skitter Mimic. It crawls across the floor to hunt for its prey. 
+			<br>
+			<br>
+			It was easy to make the mimic move, the challenge was getting it to stop. Whenever a human would get in range of the Skitter Mimc, it should run up to the human, eat, then return to its original position to digest its food and to look for more humans to eat.
+			<br>
+			<br>
+			There was one problem. When the Skitter ran to eat, it would instead look for more humans to eat from its current position rather than from it's starting position. It was a rare bug, but was important to resolve nonetheless.
+			<br>
+			<br>
+			After analyzing the issue, I solved the bug by increasing the checks to the mimic's current state and the mimic's current position. 
+		</div>
+
 	</div>
 
-	<br>
-	<br>
-
-	<!-- Skitter Mimic -->
-	<div class = "ptext" style = "background: var(--MMMM-bkg-col); margin: 2% 8%;">
-		<tab style = "text-decoration: underline;"> Starting with the Skitter Mimic </tab>
-		<br>
-		<br>
-		The first mimic I was tasked to program was the Skitter Mimic.  This mimic would be 
-		able to crawl across the floor to hunt for its prey. 
-		<br>
-		<br>
-		The difficulty in creating this mimic was not getting mimic to move, but rather 
-		getting it to stop.  Whenever a human would get in range of the Skitter Mimc, the 
-		mimic should run up to the human, eat, then return to its starting position to 
-		digest its food and to look for more humans to eat.
-		<br>
-		<br>
-		There was one significant bugs in programming the Skitter Mimic.  When the Skitter 
-		would run to eat a person, it would instead look for more humans to eat from its 
-		current position rather than from it's starting position. While this was a rare bug
-		to encounter, it was important to solve nonetheless.
-		<br>
-		<br>
-		After some trial and error, I solved the bug by significantly increasing the checks 
-		to the mimic's current state and the mimic's current position. 
-	</div>
-
-	<br>
 	<br>
 
 	<!-- Image of thre Sleepy Mimic -->
 	<div class = "pImage" style = "text-align: center;">
-		<a href = "images/MMMM/SleepyMimic.gif" >
+		<a href = "images/MMMM/SleepyMimic.gif">
 			<img src = "images/MMMM/SleepyMimic.gif" style = "width: 30%; height: auto;"
 				 title = "Sleepy Mimic" alt = "Sleepy Mimic">
 		</a>
 	</div>
 
-	<br>
-	<br>
 
 	<!-- Sleepy Mimic -->
 	<div class = "ptext" style = "background: var(--MMMM-bkg-col); margin: 2% 8%;">
 		<tab style = "text-decoration: underline;"> Mapping out the Sleepy Mimic </tab>
 		<br>
 		<br>
-		The Sleepy Mimic is the only mimic I did not plan to have any direct involvement with.
-		One of my original team members was believed to come back to work on the project. So to 
-		make up for lost time, I created a 
+		The Sleepy Mimic was the only mimic I did not plan to have direct involvement with since one of my original team members was believed to return to the project. To make up for lost time and bring them up to spped, I created  
 
 		<a href = "https://drive.google.com/file/d/1XVQMn2mc9c_omTHqgtC4cl9EM4pnlIgE/view?usp=sharing">
-		diagram</a> 
+		<i style = "color: white;">this diagram</i></a> 
 
-		outlining the different states that the Sleepy Mimic would go through in a typical game loop.  
+		outlining the different states that the Sleepy Mimic should go through in a typical game loop. I made this diagram concurrently while working on the Skitter Mimic.
 		<br>
 		<br>
-		To make sure I didn't lose any time on working on the Skitter Mimic, I made Sleepy
-		Mimic diagram concurrently with my work on the Skitter Mimic.
+		Unfortunately my teammate ended up not being able to contribute due to external commitments, again. 
 		<br>
 		<br>
-		Unfortunately my teammate back ended up not being able to contribute to the project due 
-		to external commitments. 
-		<br>
-		<br>
-		Luckily, the Sleepy Mimic was primarily about manipulating the different states of the 
-		original mimic interface I made at the start of development. This meant that all that 
-		needed to be done was manipulate some of the values and include a new state called 
-		MimicState.Sleeping to determine whether or not the Sleepy Mimic was sleeping.
+		Luckily, the Sleepy Mimic was primarily about manipulating the different states of the original mimic interface I made at the start of development. This meant I could tackle it myself by taking some extra time to work on the project.
+		<!--that all that needed to be done was manipulate some of the values and include a new state called 
+		MimicState.Sleeping to determine whether or not the Sleepy Mimic was sleeping.-->
 	</div>
 	
-	<br>
-	<br>
+
 		
-	<div class = "parallax" style = "background-image: url('images/MMMM/MMMMBackgroundArt.png');"> <div>
+	<div class = "parallax" style = "background-image: url('images/MMMM/MMMMBackgroundArt.png');">
 
-	<br>
-	<br>
+		<!-- Image of the Fungal Mimic -->
+		<div class = "pImage" style = "text-align: center;">
+			<a href = "images/MMMM/FungalMimic.png">
+				<img src = "images/MMMM/FungalMimic.png" style = "width: 40%; height: auto;"
+					alt = "Fungal Mimic Animation Sheet" title = "Fungal Mimic Animation Sheet">
+			</a>
+		</div>
+		
+		<br>
+		<br>
 
-	<!-- Image of the Fungal Mimic -->
-	<div class = "pImage" style = "text-align: center;">
-		<a href = "images/MMMM/FungalMimic.png">
-			<img src = "images/MMMM/FungalMimic.png" style = "width: 40%; height: auto;"
-				alt = "Fungal Mimic Animation Sheet" title = "Fungal Mimic Animation Sheet">
-		</a>
+		<!-- Fungal Mimc -->
+		<div class = "ptext" style = "background: var(--MMMM-bkg-col); margin: 2% 8%;">
+			<tab style = "text-decoration: underline;"> Animating the Fungal Mimc </tab>
+			<br>
+			<br>
+			Lastly, by the time I could get to programming the Fungal Mimic, it was already finished by 
+			GADIG's Programming Director. So at this point, I was tasked with implementing the Fungal 
+			Mimic's animations via Unity's Animator. 
+			<br>
+			<br>
+			This was a simple task with my experiences working on 
+			<a href = "Necronomicon.html">Necronomicon</a>
+			For this project, I used the sprite sheets for the Fungal Mimic provided by Art Team, put them
+			into Unity's Animation, then used Unity's Animator to create the different animation states.
+			After that all I had to do was incorporate the animation states into the Fungal Mimic's code.
+		</div>
+
+		<br>
+		<br>
 	</div>
-	
-	<br>
-	<br>
 
-	<!-- Fungal Mimc -->
-	<div class = "ptext" style = "background: var(--MMMM-bkg-col); margin: 2% 8%;">
-		<tab style = "text-decoration: underline;"> Animating the Fungal Mimc </tab>
-		<br>
-		<br>
-		Lastly, by the time I could get to programming the Fungal Mimic, it was already finished by 
-		GADIG's Programming Director. So at this point, I was tasked with implementing the Fungal 
-		Mimic's animations via Unity's Animator. 
-		<br>
-		<br>
-		This was a simple task with my experiences working on 
-		<a href = "Necronomicon.html">Necronomicon</a>
-		For this project, I used the sprite sheets for the Fungal Mimic provided by Art Team, put them
-		into Unity's Animation, then used Unity's Animator to create the different animation states.
-		After that all I had to do was incorporate the animation states into the Fungal Mimic's code.
-	</div>
-
-	<br>
-	<br>
-	
 	<!-- Image of the Main Menu -->
 	<div class = "pImage" style = "text-align:center;">
 		<a href = "images/MMMM/MainMenu.png">
@@ -271,141 +216,114 @@
 				alt = "Main Menu" title = "Main Menu">
 		</a>
 	</div>
-
 	
-	<br>
-	<br>
+
 
 	<!-- The Title Screen -->
 	<div class = "ptext" style = "background: var(--MMMM-bkg-col); margin: 2% 8%">
 		<tab style = "text-decoration: underline;"> The Title Screen</tab>
 		<br>
 		<br>
-		When talking with Design Team about the main menu's screens after recieveing Title 
-		Screen art for the game, I believed that there was room for improvement. While I 
-		personally did not work on programming the various menus screens, I chose to provide 
-		feedback from a User Experience standpoint. 
+		While I did not work on <i>programming</i> the various menus screens, I provided feedback from a User Experience standpoint. 
 		<br>
 		<br>
-		When designing a main menu I believe that accessibility is of the utmost importance. 
-		For MMMM, this meant granting the Play Button the highest salience by giving it 
-		larger than the rest of the buttons and centering it.  
+		In a main menu, I believe that accessibility is of the utmost importance. For MMMM, this meant granting the Play Button the highest salience by making it larger than other buttons and centering it.  
 		<br>
 		<br>
-		When someone looks at an image for the first time they typically start looking at 
-		it from the center.  In the main menu, this means looking at the Skitter Mimic. 
-		The gray slits on top of its eyes help guide the player's down directly to the Play 
-		Button - the most important button to access when opening up any game. 
+		When users look at an image for the first time they typically start looking at it from the center. In the main menu, this means looking at the Skitter Mimic. The gray slits on its eyes guide the user's directly to the Play Button - the most important button to access when opening up any game. 
 		<br>
 		<br> 
-		From there, the players eyes will likely go to either the How To Play Button or the 
-		Options Button - buttons that have a slightly lower priority than the Play Button. 
-		These two buttons still maintain a relatively high priority because they are the two
-		buttons that newer players might be interested in opening instead of the Play Button.
+		From there, the users eyes will likely go to either the How To Play or Options buttons - buttons that have a lower priority than the Play Button. They still maintain a relatively high priority since newer users might be interested in opening them first instead of the Play Button.
 		<br>
 		<br>
-		The Exit Button and the Credit Buttons deserve the lowest priority because they are 
-		buttons that would typically only be pressed once during the typical user's play 
-		session. While arguments can be made for the Exit Button having a higher priority 
-		than other buttons due to it being something that should be pressed every play 
-		session, I think putting it in the upper left hand corner was the right idea. For the 
-		bottom three buttons, I chose to maintain the ideas of
-		<i><a href = "https://en.wikipedia.org/wiki/Chunking_(psychology)">Memory Chunking</a></i>
+		The Exit and Credit Buttons deserve the lowest priority because they are buttons that rea typically only pressed once during a typical user's play session. While arguments can be made for the Exit Button having a higher priority 
+		than other buttons due to it being something that should be pressed every session, I think putting it in the upper left hand corner was the right idea. For the bottom buttons, I maintained the ideas of
+		<a href = "https://en.wikipedia.org/wiki/Chunking_(psychology)"><i style = "color: white;">Memory Chunking</i></a>
 		and the 
-		<i><a href = "https://www.interaction-design.org/literature/article/laws-of-proximity-uniform-connectedness-and-continuation-gestalt-principles-2">
-		Law of Proximity</a></i>
-		and limited the bottom part of the screen to only 3 buttons with decent spacing 
-		instead of upwards of 5 clustered buttons.
+		<a href = "https://www.interaction-design.org/literature/article/laws-of-proximity-uniform-connectedness-and-continuation-gestalt-principles-2"><i style = "color: white;">
+		Law of Proximity</i></a>,
+		limiting the bottom of the screen to only 3 buttons with decent spacing 
+		instead of more, clustered buttons.
 	</div>
-
-	<br>
-	<br>
 			
-	<div class = "parallax" style = "background-image: url('images/MMMM/MMMMBackgroundArt.png');"> <div>
+	<div class = "parallax" style = "background-image: url('images/MMMM/MMMMBackgroundArt.png'); height: 45%;"> 
 
-	<br>
-	<br>
+		<!-- Image of the Controls Screen -->
+		<div class = "pImage" style = "text-align: center;">
+			<a href = "images/MMMM/ControlsScreen.png">
+				<img src = "images/MMMM/ControlsScreen.png" style = "width: 60%; height: auto;" 
+					alt = "Controls Screen" title = "Controls Screen">
+			</a>
+		</div>
 
-	<!-- Image of the Controls Screen -->
-	<div class = "pImage" style = "text-align: center;">
-		<a href = "images/MMMM/ControlsScreen.png">
-			<img src = "images/MMMM/ControlsScreen.png" style = "width: 80%; height: auto;" 
-				alt = "Controls Screen" title = Controls Screen">
+
+		<br>
+		<br>
+
+		<!-- Controls Screen Explanation -->
+		<!--  <div class = "ptext" style = "background: var(--MMMM-bkg-col);">  -->
+		<!--   	Above is what the original Controls Screen looked like orginally. I believed that we     -->
+		<!-- 	could easily expand upon this screen for accessibility. More specifically, I wanted      -->
+		<!-- 	to increase the ease of use and how quickly a player can start the actual game.	         -->
+		<!-- 	<br>                                                                                     --> 
+		<!-- 	<br>                                                                                     --> 
+		<!-- 	I also wanted to expand upton this creen to more properly cover the features in MMMM.    -->
+		<!-- 	On top of the mimic system, there is also the lesser known feature of scaring humans by  -->
+		<!-- 	clicking on furniture that do not contian mimics.  However, I wanted to make sure the    -->
+		<!-- 	instructions were as simple as possible. This meant that I had allow the player to       -->
+		<!-- 	navigate to a second screen with the rest of the instructions.                           -->
+		<!-- 	<br>                                                                                     --> 
+		<!-- 	<br>                                                                                     --> 
+		<!-- 	This is what we came up with:                                                            --> 
+		<!-- </div>
+
+		<br>
+		<br>
+		<br>
+		
+		<!-- Improved Controls Screen -->
+		<!--  <div class = "pImage" style = "text-align: center;">  -->
+		<!--	<a href = "images/MMMM/ImprovedControlsScreen.png">  -->
+		<!--		<img src = "images/MMMM/ImprovedControlsScreen.png" style = "width: 80%; height: auto;"  -->
+		<!--			alt = "Improved Controls Screen" title = "Improved Controls Screen">  -->
+		<!--	</a>  
+		</div>-->
+		
+
+		<!-- Version Disclaimer -->
+		<!--<div class = "ptext" style = "text-align:center; color: white; background: var(--MMMM-bkg-col); margin: 2% 8%">
+			While there are multiple versions advertised for different operating systems, 
+			only the Windows version has been tested and verified.
+		</div>
+		<br>
+		<br>-->
+
+		<!-- Link to the Game -->
+		<a href = "https://gadig.itch.io/morgs-mimics" style = "text-decoration: none;">
+			<div class = "ptext" style = "text-align:center; color: white; background: var(--MMMM-bkg-col);
+			 margin: 0% 30%;">
+				While there are versions for different operating systems, only the Windows version has been tested and verified.  Get it here
+			</div>
 		</a>
-	</div>
 
 
-	<br>
-	<br>
+		<!-- Site Navigation -->
+		<div class = "ptext" style = "margin-left: 30%; margin-right: 30%; background: none;">
+			<div class = "center">
 
-	<!-- Controls Screen Explanation -->
-	<!--  <div class = "ptext" style = "background: var(--MMMM-bkg-col);">  -->
-	<!--   	Above is what the original Controls Screen looked like orginally. I believed that we     -->
-	<!-- 	could easily expand upon this screen for accessibility. More specifically, I wanted      -->
-	<!-- 	to increase the ease of use and how quickly a player can start the actual game.	         -->
-	<!-- 	<br>                                                                                     --> 
-	<!-- 	<br>                                                                                     --> 
-	<!-- 	I also wanted to expand upton this creen to more properly cover the features in MMMM.    -->
-	<!-- 	On top of the mimic system, there is also the lesser known feature of scaring humans by  -->
-	<!-- 	clicking on furniture that do not contian mimics.  However, I wanted to make sure the    -->
-	<!-- 	instructions were as simple as possible. This meant that I had allow the player to       -->
-	<!-- 	navigate to a second screen with the rest of the instructions.                           -->
-	<!-- 	<br>                                                                                     --> 
-	<!-- 	<br>                                                                                     --> 
-	<!-- 	This is what we came up with:                                                            --> 
-	<!-- </div>
+				<a href = "../index.html" style = "text-decoration: none;">
+					<img src = "images/Logos/Home.png" style = "width: 38px; height: auto; filter: invert(100%);" alt = "Home" title = "Home">
+				</a>
 
-	<br>
-	<br>
-	<br>
-	
-	<!-- Improved Controls Screen -->
-	<!--  <div class = "pImage" style = "text-align: center;">  -->
-	<!--	<a href = "images/MMMM/ImprovedControlsScreen.png">  -->
-	<!--		<img src = "images/MMMM/ImprovedControlsScreen.png" style = "width: 80%; height: auto;"  -->
-	<!--			alt = "Improved Controls Screen" title = "Improved Controls Screen">  -->
-	<!--	</a>  -->
-	</div>
+				<a href = "https://www.linkedin.com/in/jason-villanueva-39617b195" style = "text-decoration:none;">
+					<img src = "images/Logos/Linkedin.png" style = "width: 40px; height: auto;" alt = "Linkedin" title = "Linkedin">
+				</a>
 
-	<br>
-	<br>
+				<a href = "#" style = "text-decoration: none; color: white;">
+					<img src = "images/Logos/top.png" style = "width: 30px; height: auto; filter: invert(100%);" alt = "Back to Top" title = "Back to Top">
+				</a>
 
-	<!-- Version Disclaimer -->
-	<div class = "ptext" style = "text-align:center; color: white; background: var(--MMMM-bkg-col); margin: 2% 8%">
-		While there are multiple versions advertised for different operating systems, 
-		please note that only the Windows version has been tested.
-	</div>
-	<br>
-	<br>
-
-	<!-- Link to the Game -->
-	<a href = "https://gadig.itch.io/morgs-mimics" style = "text-decoration: none;">
-		<div class = "ptext" style = "text-align:center; color: white; background: var(--MMMM-bkg-col);
-		 margin: 0% 30%;">
-			Get Morg's Mimics & the Mansion Munchables here
-		</div>
-	</a>
-
-	<br>
-	<br>
-
-	<!-- Site Navigation -->
-	<div class = "ptext" style = "margin-left: 30%; margin-right: 30%; background: none;">
-		<div class = "center">
-
-			<a href = "../index.html" style = "text-decoration: none;">
-				<img src = "images/Logos/Home.png" style = "width: 38px; height: auto; filter: invert(100%);" alt = "Home" title = "Home">
-			</a>
-
-			<a href = "https://www.linkedin.com/in/jason-villanueva-39617b195" style = "text-decoration:none;">
-				<img src = "images/Logos/Linkedin.png" style = "width: 40px; height: auto;" alt = "Linkedin" title = "Linkedin">
-			</a>
-
-			<a href = "#" style = "text-decoration: none; color: white;">
-				<img src = "images/Logos/top.png" style = "width: 30px; height: auto; filter: invert(100%);" alt = "Back to Top" title = "Back to Top">
-			</a>
-
+			</div>
 		</div>
 	</div>
-	
 </body>

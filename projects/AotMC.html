@@ -20,7 +20,7 @@
 		<br>
 
 
-		<div class = "parallax" style = "background-image: url('images/AotMC/Background1.jpg');">
+		<div class = "parallax" style = "background-image: url('images/AotMC/Background1.jpg'); height: 100%;">
 
 			<h1>
 				<!--<div class = "pImage" style = "text-align:center;">-->
@@ -60,8 +60,7 @@
 		</div> <!-- End of 1st Parallax-->
 
 		<!-- 2nd Parallax-->
-		<div class = "parallax" style = "background-image: url('images/AotMC/Background2.jpg');"> 
-		<br>
+		<div class = "parallax" style = "background-image: url('images/AotMC/Background2.jpg'); height: 80%;"> 
 		<br>
 
 
@@ -74,26 +73,18 @@
 			<br> - General Script and dialogue editing
 			<br> - Layout of the main menu 
 			<br>
-			<br>
 			<div class = "center" style = "text-decoration: underline;"> Other Notes </div>
 			<br>
-			We actually ended up with more programmers than we needed, so my job for this project
-			became much more flexible to both program and delegate tasks to other programmers, as 
-			well as aid our now smaller Design Team. Whenever I wasn't working with Design Team or 
-			programming something myself, I was helping teach and assist my programming sub-team 
-			about Unity and overall asset implementation.
-
+			Since we ended up with more programmers than we needed, my job became much more flexible to program and delegate tasks to other programmers, <i>as well as</i> aid our now smaller Design Team. Whenever I wasn't working with Design Team or 
+			programming something myself, I taught and assisted my programming subteam with Unity and asset implementation.
 		</div>
-
-		<br>
 		
 		<div class = "pImage" style = "text-align: center;">
-			<img src = "images/AotMC/deck.PNG" style = "width: 30%; height: auto;"
+			<img src = "images/AotMC/deck.PNG" style = "width: 25%; height: auto;"
 			alt = "Attack of the Magic Cardboard deck"
 			title = "Attack of the Magic Cardboard deck">
 		</div>
 
-		<br>
 		<br>
 		</div> <!-- End of 2nd Parallax-->
 
@@ -113,12 +104,10 @@
 			thrown towards an enemy.
 		</div>
 
-		
-		<br>
 		<br>
 
 		<div class = "pImage" style = "text-align: center;">
-				<img src = "images/AotMC/level 2.png" style = "width: 70%; height: auto;"
+				<img src = "images/AotMC/level 2.png" style = "width: 60%; height: auto;"
 				alt = "Attack of the Magic Cardboard Level 2" title =  "Attack of the Magic Cardboard Level 2">
 		</div>
 
@@ -127,39 +116,36 @@
 		</div> <!-- End of 3rd Parallax-->
 
 		<!-- 4th Parallax-->
-		<div class = "parallax" style = "background-image: url('images/AotMC/Background4.jpg');"> 
-			<br>
+		<div class = "parallax" style = "background-image: url('images/AotMC/Background4.jpg'); height: 90%;"> 
 			<br>
 			<!-- My Thought Process -->
 			<div class = "center" style = "font-size: 26px;"> My Thought Process </div>
 
-			<br>
 			<br>
 
 			<!-- Card Trajectories -->  
 			<div class = "ptext" style = "background: var(--AotMC-bkg-col); margin: 0% 20%;">
 				<div class = "pHeader" style = "text-decoration: underline;"> Card Trajectories </div>
 				<br>
-				I created the foundation of how a card should work, to be built upon throughout
-				the game's development cycle. The way cards throwing works is as follows:
+				I made the foundation of how a card should work, to be built upon throughout the game's development cycle. Card throwing works as follows:
 				<br>
-				<br> - Whenever a card is selected (clicked and dragged on), the card would be picked 
+				<br> - When a card is selected (clicked and dragged on), it shall be picked 
 					up and folllow the mouse until it is either thrown or put back in the player's hand.
 				<br>
-				<br> - If the card is thrown, it's velocity would be computed based on how it was flung, 
+				<br> - If anything happened to the card other than getting thrown, it would return to the hand.
+				<br>
+				<br> - If the card is thrown, its velocity would be computed based on how it was flung, 
 				much like the throwing mechanics of Pokeballs work in the mobile game: Pokemon Go.
 				I thought of modifying the card's X position based off of where and how quickly the 
 				player moved the card on screen via it's Y position. Velocity would be calculated by 
 				the function: 
 				<br>
+				
 				<div class = "pImage" style = "text-align: center">
-					<img src = "images/AotMC/CardCalculation.png" style = "width: 90%; height: auto;"
+					<img src = "images/AotMC/CardCalculation.png" style = "width: 70%; height: auto;"
 					alt = "Card trajectory formula" title = "Card trajectory formula">
 				</div>
 
-				- If the player did anything else with the card other than throw it, it would go 
-				back to their hand.
-				<br>
 				<br>
 				Because GADIG's Design Team constantly wanted to alter the card throwing mechanics, they 
 				were ultimeately changed by numerous other team members while I was assigned other work.
@@ -167,128 +153,105 @@
 			</div>
 		</div>  <!-- End of 4th Parallax-->
 
-		<!-- 5th Parallax (loop: use 1st image)-->
-		<div class = "parallax" style = "background-image: url('images/AotMC/Background1.jpg');"> 
+		<!-- 5th Parallax (start of next loop: use 1st image)-->
+		<!--<div class = "parallax" style = "background-image: url('images/AotMC/Background1.jpg');"> 
 
-		<div class = "pImage" style = "text-align: center">
-			<img src = "images/AotMC/cardText1.PNG" style = "width: 70%; height: auto;"
-			alt = "Light based card and wind baed card descriptions"
-			title="Light based card and wind baed card descriptions">
-		</div>
+			<div class = "pImage" style = "text-align: center">
+				<img src = "images/AotMC/cardText1.PNG" style = "width: 60%; height: auto;"
+				alt = "Light based card and wind baed card descriptions"
+				title="Light based card and wind baed card descriptions">
+			</div>
+			-->
+			<!-- Writing (cards and script) & Polishing Dialogue Implementation -->  
+			<!--<div class = "ptext" style = "background: var(--AotMC-bkg-col); margin: 0% 20%;">
+				<div class = "pHeader" style = "text-decoration: underline;"> Writing for 
+				Attack of the Magic Cardboard (AotMC) </div>
+				<br>
+				Because we eneded up with significantly more programmers than we needed, I as tasked 
+				with not only programming, but also helping Design Team with writing some of the game's
+				dialogue and writing the card descriptions. I helped write and edit the game's dialogue 
+				to fit the game's fun and light hearted theming. The main challege I had was figuring
+				out how to write card descriptions in order to hint at what specific enemy types they 
+				should be thrown at while still fitting the game's atmosphere and not being too direct 
+				about it.
+				<br>
+				<br>
+				Full dialogue can be found by playing the game. A link to the game can be found at 
+				the bottom of this page.
+		 
+			</div>
 
-		<!-- Writing (cards and script) & Polishing Dialogue Implementation -->  
-		<div class = "ptext" style = "background: var(--AotMC-bkg-col); margin: 0% 20%;">
-			<div class = "pHeader" style = "text-decoration: underline;"> Writing for 
-			Attack of the Magic Cardboard (AotMC) </div>
-			<br>
-			Because we eneded up with significantly more programmers than we needed, I as tasked 
-			with not only programming, but also helping Design Team with writing some of the game's
-			dialogue and writing the card descriptions. I helped write and edit the game's dialogue 
-			to fit the game's fun and light hearted theming. The main challege I had was figuring
-			out how to write card descriptions in order to hint at what specific enemy types they 
-			should be thrown at while still fitting the game's atmosphere and not being too direct 
-			about it.
-			<br>
-			<br>
-			Full dialogue can be found by playing the game. A link to the game can be found at 
-			the bottom of this page.
-	 
-		</div>	
-
-		</div>	 <!-- End of 5th Parallax-->
+		</div>	--> <!-- End of 5th Parallax-->
 
 		<!-- 6th Parallax (loop: use 2nd image)-->
 		<div class = "parallax" style = "background-image: url('images/AotMC/Background2.jpg');"> 
 
-			<div class = "pImage" style = "text-align: center">
-				<img src = "images/AotMC/cardText2.PNG" style = "width: 70%; height: auto;"
+			<!--<div class = "pImage" style = "text-align: center">
+				<img src = "images/AotMC/cardText2.PNG" style = "width: 60%; height: auto;"
 				alt = "Water based card and Thunder based card descriptions"
 				title = "Water based card and thunder based card descriptions">
-			</div>
-
+			</div>-->
 			<br>
-			<br>
-		
-
 			<!-- Main Menu Design -->  
 			<div class = "ptext" style = "background: var(--AotMC-bkg-col); margin: 0% 20%;">
 				<div class = "pHeader" style = "text-decoration: underline;"> Main Menu Design </div>
 				<br>
-				After writing dialogue, card names, and card descriptions, I was to work on the game's 
-				main menu. While I didn't work on programming the main menu iteslf, I was in charage 
-				of designing the layout of the main menu. 
-				<br>
-				<br>
-				The screen's art was already made by the time I started tackling they menu's layout. 
-				So, the difficulty in designing this menu stemmed from having to work around it. 
+				After working on the writing, I designed the main menu.	My challenge in designing this menu stemmed from having to work around the art already made for it. 
 				<br>
 				<br> 
 				I chose to place the buttons at the top left of the main menu and the game's logo to 
-				the right of it. Doing so would help give the background art, the logo, and the buttons
-				more than enough breathing room for the player to properly take in each of them without
-				making the screen feel too cluttered.
+				the right of it. Doing so would help give the art, logo, and buttons enough breathing room for the user to properly take in each of them without cluttering the screen.
 				<br>
 				<br>
-				I also chose to keep the Exit button away from the rest of buttons to minimize the amount 
-				of misclicks that would result in players accidentally exiting the game.
+				I also kept the Exit Button away from the others to minimize potential misclicks.
+			</div>
+
+			<!-- Image of Main Menu -->
+			<div class = "pImage" style = "text-align: center;">
+				<img src = "images/AotMC/AotMC_MainMenu.PNG" style = "width: 60%; height: auto;"
+				alt = "Attack of the Magic Cardboard's main menu"
+				title = "Attack of the Magic Cardboard's main menu">
 			</div>
 
 		</div> <!-- End of 6th Parallax-->
 
 		<!-- 7th Parallax (loop: use 3rd image)-->
-			<div class = "parallax" style = "background-image: url('images/AotMC/Background3.jpg');"> 
-
-
-			<!-- Image of Main Menu -->
-			<div class = "pImage" style = "text-align: center;">
-				<img src = "images/AotMC/AotMC_MainMenu.PNG" style = "width: 70%; height: auto;"
-				alt = "Attack of the Magic Cardboard's main menu"
-				title = "Attack of the Magic Cardboard's main menu">
-			</div>
-
-
-			<br>
+		<div class = "parallax" style = "background-image: url('images/AotMC/Background3.jpg');"> 
 			<br>
 
 			<!-- Last Minute Grind-->
 			<div class = "ptext" style = "background-color: var(--AotMC-bkg-col); margin: 0% 20%;">
 				<div class = "pHeader" style = "text-decoration: underline;"> A Final Push </div>
 				<br>
-				Towards the end of the development cycle, work narrowed down to myself, the 
-				Programming Director, and the Game Director. I became in charge of implementing 
-				the dialogue from the script into the game's text progression system; beta testing;
-				refining the in-game UI; and aiding with launching the game on 
+				At the end of the development cycle, work narrowed down to myself, the 
+				Programming Director, and the Game Director. I was in charge of implementing 
+				dialogue into the game's text progression system; beta testing;	refining UI;
+				and aiding with launching the game on 
 				<i><a href = "https://gadig.itch.io/attack-of-the-magic-cardboard" style = " color: white;">
 				GADIG's itch.io page</a></i> just hours before publicly showcasing it to the rest 
-				of our development team.
+				of our team.
 			</div>
 
-		</div> <!-- End of 7th Parallax-->
-
-		<!-- 8th Parallax (loop: use 4th image)-->
-		<div class = "parallax" style = "background-image: url('images/AotMC/Background4.jpg');"> 
+			<br>
 			<br>
 
 			<!--What I learned-->
 			<div class = "ptext" style = "background-color: var(--AotMC-bkg-col); margin: 0% 20%;">
 				<div class = "pHeader" style = "text-decoration: underline;"> What I learned </div>
 				<br>
-				While I have had experience in leading a team of programmers from past projects,
-				I've never had too many programmers until working on Attack of the Magic Cardboard.
+				<!--I've never had too many programmers until working on this project.
 				I realized how task delegation is even more important than I previously believed.  
-				I learned that matching the right task to the right group of people is imperative.
-				It's important to understand your fellow teammates; their expericnes; and their 
-				skill levels before starting a project. Doing so can really streamline software 
-				development.
 				<br>
-				<br>
-				I was also able to get a better perspectivetive on software development from a designer's
-				point of view by working with the Design Team. Working outside the logistical areas of 
-				the project helped me give context for how and why things should be implemented the way 
-				our Design Team intends for it to be.
+				<br>-->
+				I got a better perspective on software development from a designer's
+				point of view by working with Design Team. Working outside the logistical areas of 
+				the project gave better context for how and why things should be implemented the way 
+				they are.
 			</div>
+		</div> <!-- End of 7th Parallax-->
 
-			<br>
+		<!-- 8th Parallax (loop: use 4th image)-->
+		<div class = "parallax" style = "background-image: url('images/AotMC/Background4.jpg');"> 
 			<br>
 
 			<!-- Closing Thoughts -->
