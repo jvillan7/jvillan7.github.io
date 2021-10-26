@@ -107,6 +107,7 @@ body{
 
 .parallax{
 	height: 100%; /*this should be 100%*/
+	width: auto;
 
 	position: relative;
 	background-attachment: fixed; /* This is what makes it parallax*/
@@ -115,6 +116,13 @@ body{
 	background-size: cover;
 }
 
+
+/*Half Size (snapped to left/right*/
+@media(max-width:1200px){
+	.parallax{
+		height: 70%;
+	}
+}
 
 /*Smaller Web Browser*/
 @media(max-width:830px){
@@ -127,12 +135,16 @@ body{
 	}
 	
 	ptext{
-		font-size: 14px;
+		font-size: 10px;
 	}
 
 	body{
 		margin-left: 10%;
 		margin-right: 10%;
+	}
+
+	.parallax{
+		height: 80%;
 	}
 }
 
@@ -153,8 +165,10 @@ body{
 	}
 
 	body{
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-left: 0%;
+		margin-right: 0%;
 	}
-	
+	.parallax{
+		height: 60%;
+	}
 }
