@@ -96,8 +96,8 @@ body{
 	background-color: var(--background-color); /* Dark Green */
 
 	/*Borders and Alignment*/
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 10%;
+	margin-right: 10%;
 
 
 	/*Font*/
@@ -117,10 +117,31 @@ body{
 }
 
 
+
+
+
+
+
+/*******************************************************************/
+/*******************************************************************/
+/*              Adapting for different screen sizes                */
+/*******************************************************************/
+/*******************************************************************/
+
+
+
+
+
+
+
 /*Half Size (snapped to left/right*/
 @media(max-width:1200px){
 	.parallax{
 		height: 70%;
+	}
+		body{
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 }
 
@@ -138,10 +159,7 @@ body{
 		font-size: 10px;
 	}
 
-	body{
-		margin-left: 10%;
-		margin-right: 10%;
-	}
+
 
 	.parallax{
 		height: 80%;
