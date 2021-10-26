@@ -96,8 +96,8 @@ body{
 	background-color: var(--background-color); /* Dark Green */
 
 	/*Borders and Alignment*/
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 10%;
+	margin-right: 10%;
 
 
 	/*Font*/
@@ -140,6 +140,10 @@ body{
 	.parallax{
 		height: 70%;
 	}
+	body{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
 }
 
 /*Smaller Web Browser*/
@@ -154,11 +158,6 @@ body{
 	
 	ptext{
 		font-size: 10px;
-	}
-
-	body{
-		margin-left: 10%;
-		margin-right: 10%;
 	}
 
 	.parallax{
@@ -183,8 +182,8 @@ body{
 	}
 
 	body{
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-left: 0%;
+		margin-right: 0%;
 	}
 	.parallax{
 		height: 60%;
