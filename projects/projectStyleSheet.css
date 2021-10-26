@@ -150,7 +150,7 @@ body{
 
 
 /*Mobile Sized*/
-@media(max-width:560px){
+@media(max-width:600px){
 	h2{
 		color: blue;
 		font-size: 100000px;
