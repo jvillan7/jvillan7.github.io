@@ -69,6 +69,7 @@ h5 img{
 	padding-top: 10%;
 	padding-left: 25%;
 	padding-right: 17%;
+	font-size: 18px;
 }
 
 /*Tile Images for projects I've worked on*/
@@ -188,7 +189,7 @@ body{
 		padding-right:15%;
 	}
 	.bio{
-		font-size:16px;
+		/*font-size:16px;*/
 		text-align: center;
 		padding-top: 5%;
 		padding-left: 0%;
@@ -201,6 +202,18 @@ body{
 		margin-right:  0%;
 	}
 	
+}
+
+@media(max-width: 1480px){
+	.col{
+		margin-left: 10%;
+	}
+}
+
+@media(max-width: 1200px){
+	.col{
+		margin-left: 7%;
+	}
 }
 
 /*Inbetween Half Window and Smaller Web Browser*/
@@ -264,7 +277,7 @@ body{
 	}
 
 	h1{
-		font-size: 32px;
+		font-size: 56px;
 	}
 	
 	h2{
@@ -287,7 +300,6 @@ body{
 		padding-right:15%;
 	}
 	.bio{
-		font-size:12px;
 		text-align: center;
 		padding-top: 5%;
 		padding-left: 0%;
@@ -328,10 +340,6 @@ body{
 @media(max-width:520px){
 	h2{
 		font-size: 14px;
-	}
-
-	.bio{
-		font-size: 16px;
 	}
 
 	h5 img{
