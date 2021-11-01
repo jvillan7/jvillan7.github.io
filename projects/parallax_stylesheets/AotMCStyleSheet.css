@@ -44,23 +44,14 @@ h2{
 
 /*Project Descriptions - text boxes will have to adjust for page size*/
 .ptext{
-	background-color: var(--Necronomicon-bkg-col);
-	margin-left: 0%;
-	margin-right: 0%;
+	background-color: var(--AotMC-bkg-col);
+	margin: 0% 12%;
 	padding: 2%;
 
 	font-size: 1em; /*   16px/16 = 1 em*/
 	color: white;
 	border: 1px none white;
 	border-radius: 5px;
-}
-
-/*Project Images*/
-.pImage{
-	margin-left: 10%;
-	margin-right:10%;
-	padding:2%;
-	font-size: 1.125; /*   18px/16 = 1.125 em*/
 }
 
 /*Project Section Header*/
@@ -96,7 +87,7 @@ body{
 	background-color: var(--background-color); /* Dark Green */
 
 	/*Borders and Alignment*/
-	margin: 0% 10%; /*top/bot %   left/right %*/
+	margin: 2% 10%; /*top/bot %   left/right %*/
 
 
 	/*Font*/
@@ -104,7 +95,53 @@ body{
 	font-family: var(--font);
 }
 
+
+
+/*******************************************************************/
+/*******************************************************************/
+/*                             Parallax                            */
+/*******************************************************************/
+/*******************************************************************/
+
+
 .parallax{
+	height: 100%; /*this should be 100%*/
+	width: auto;
+
+	position: relative;
+	background-attachment: fixed; /* This is what makes it parallax*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.parallax1st{
+	height: 85%; /*this should be 100%*/
+	width: auto;
+
+	position: relative;
+	background-attachment: fixed; /* This is what makes it parallax*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.parallax2nd{
+	height: 90%; /*this should be 100%*/
+	width: auto;
+
+	position: relative;
+	background-attachment: fixed; /* This is what makes it parallax*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+.parallax3rd{
 	height: 100%; /*this should be 100%*/
 	width: auto;
 
@@ -119,6 +156,51 @@ body{
 
 
 
+/*******************************************************************/
+/*******************************************************************/
+/*                          Project Images                         */
+/*******************************************************************/
+/*******************************************************************/
+
+
+
+
+.pImage{
+	margin-left: 10%;
+	margin-right:10%;
+	padding:2%;
+	font-size: 1.125; /*   18px/16 = 1.125 em*/
+}
+
+
+.MainLogo{
+
+
+}
+
+.MainLogo img{
+	width: 40%;
+	margin: 1% 30%;
+	text-align: center;
+}
+
+.deckImage{
+	padding:2%;
+}
+
+.deckImage img{
+	width: 25%;
+	height: 25%;
+}
+
+.Level2{
+	text-align: center;
+}
+
+.Level2 img{
+	width: 60%;
+	height: auto;
+}
 
 
 /*******************************************************************/
@@ -128,8 +210,26 @@ body{
 /*******************************************************************/
 
 
+@media(max-width: 1650px){
+	.parallax1st{
+		height: 80%;
+	}
+
+	.parallax2nd{
+		height: 80%;
+	}
+}
 
 
+@media(max-width: 1450px){
+	.parallax1st{
+		height: 75%;
+	}
+
+	.parallax2nd{
+		height: 75%;
+	}
+}
 
 
 
@@ -138,33 +238,83 @@ body{
 	.parallax{
 		height: 70%;
 	}
+
+	.parallax1st{
+		height: 80%;
+	}
+
+	.parallax2nd{
+		height: 70%;
+	}
+
+
+
+
+
 	body{
-		margin-left: 5%;
-		margin-right: 5%;
+		margin: 0% 0%;
+	}
+
+	.MainLogo img{
+		width: 60%;
+		margin: 0% 20%;
 	}
 }
+
+
+
 
 /*Smaller Web Browser*/
 @media(max-width:830px){
 	.parallax{
 		height: 80%;
 	}
+
+	.parallax1st{
+		height: 80%;
+	}
+
+	.parallax2nd{
+		height: 80%;
+	}
+
+
+
+
+	.MainLogo img{
+		width: 80%;
+		margin: 0% 10%;
+	}
+
+
+	.deckImage img{
+		width: 50%;
+	}
 }
+
+
+
 
 
 /*Mobile Sized*/
 @media(max-width:700px){
-	h2{
-		color: blue;
-		/*font-size: 100px;*/
-	}
-
-
 	body{
 		margin: 0% 0%; /*top/bot %   left/right %*/
 	}
 	.parallax{
 		height: 60%;
+	}
+
+	.parallax1st{
+		height: 70%;
+	}
+
+	.parallax2nd{
+		height: 70%;
+	}
+
+	.ptext{
+		margin: 0% 0%;
 	}
 
 }
