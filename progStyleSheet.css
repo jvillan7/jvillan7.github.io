@@ -1,0 +1,340 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root{
+	--font-color: white;
+	--font: sans-serif;
+
+	/*Index Background Colors*/
+	--background-color: #131313;		/*Dark Gray*/
+	--nav-col: #006635;      			/*Dark Green*/;
+	--header-border-color: #808000; 	/*Olive*/
+	--tile-color: #b4bd80;				/*Bkg color for index's tiles*/
+
+
+	/*Text Background Colors*/
+	--Necronomicon-bkg-col: #770000;  	/*Dark Red*/
+	--Lullaby-bkg-col: #3c1361; 	  	/*Dark Purple*/
+	--Collateral-bkg-col: #c7882a;		/*Yellow-Gold*/
+	--Bleak-bkg-col: #345eeb;			/*Bold Light Blue*/
+	--GADIG-bkg-col: #2f2f2f;			/*Dark Gray*/	
+	--ExperimentIn-bkg-col: #8656b0;	/*Light Purple*/
+	--MMMM-bkg-col: #c41bc2;			/*Pink*/
+	--AotMC-bkg-col: #2d9de3;			/*Light Blue*/
+
+}
+
+/*Titles: the top of the page*/
+h1{
+	font-size: 2.5em;
+	text-align: center;
+	margin-top: 10%;
+}
+
+/*Contact Info:  will have to adjust margins & padding for screen size later*/
+h2{
+	font-size: 1.25em;
+	text-align: center;
+	background-color: var(--nav-col);
+	
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+
+/*Quick Bio*/
+.bio{
+	margin: 4% 0%;
+	text-align: center;
+	font-size: 1.25em;
+}
+
+/*Tile Images for projects I've worked on*/
+.col img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/*Columns (that contain tiles) for projects I've worked on*/
+.col{
+	/*Sizing and Formatting*/
+	width: 250px; 		/*width: 25.33%;*/
+	height: 250px;		/*height: 25.33%;*/
+	float: left;
+	padding: 2%; 		/* How much space there is inside the box*/
+
+	display: block;
+
+	/*Font*/
+	font-size: 18px;
+	text-align: center;
+
+	/*Border*/
+	margin-left: 4%;
+	margin-top: 1%;
+	margin-bottom: 2%;		/* Amount of space inbetween each box	 */
+	border: 2px solid white;
+	border-radius: 35px;
+}
+
+
+/*"Body" Background of the webpage*/
+body{
+	background-color: var(--background-color);
+
+	/*Borders and Alignment*/
+	margin-left: 20%;
+	margin-right: 20%;
+
+
+	/*Font*/
+	color: var(--font-color);
+	font-family: var(--font);
+}
+
+
+
+
+.parallax{
+	height: 100%; /*this should be 100%*/
+	width: auto;
+
+	position: relative;
+	background-attachment: fixed; /* This is what makes it parallax*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+/*Navigation Bar*/
+.nav{
+	background-color: var(--nav-col);
+	
+
+	/*border: 2px none none;
+	/*border-radius: 10px;*/
+	
+
+	top: 0;
+	position: fixed;
+	overflow: hidden;
+
+	width: 100%;
+	height: auto;
+	margin-left: -20%;
+}
+
+
+.nav a{
+	display: block;
+	float: left;
+	text-align: center;
+
+}
+
+.nav a:hover{
+	color:  black;
+}
+
+.nav li{
+	display:  inline-block;
+	font-size: 1.5em;
+	padding: 1% 2%;
+
+}
+
+
+
+
+
+/*******************************************************************/
+/*******************************************************************/
+/*              Adapting for different screen sizes                */
+/*******************************************************************/
+/*******************************************************************/
+
+
+
+
+
+
+/*~ >3/4ths of a large screen'd Web Browser*/
+@media(max-width:1700px){
+	.col{
+		margin-left: 5%;
+		margin-right: -2%;
+	}
+}
+
+/*Both the 1650 and the 1580 are just inbetween ~ >3/4ths of the screen and ~3/4ths of the screen*/
+@media(max-width: 1650px){
+	.col{
+		margin-left: 3%;
+	}
+}
+
+/*Both the 1650 and the 1580 are just inbetween ~ >3/4ths of the screen and ~3/4ths of the screen*/
+@media(max-width: 1580px){
+	.col{
+		margin-left: 1%;
+		margin-right: 0%;
+	}
+}
+
+@media(max-width: 1520px){
+	.col{
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+}
+
+/*Smaller Web Browser*/
+@media(max-width:1500px){
+
+	.col{
+		margin-left: 7%;
+		margin-right:  0%;
+	}
+	
+}
+
+@media(max-width: 1480px){
+	.col{
+		margin-left: 10%;
+	}
+}
+
+@media(max-width: 1200px){
+	.col{
+		margin-left: 7%;
+	}
+}
+
+/*Inbetween Half Window and Smaller Web Browser*/
+@media(max-width:1100px){
+	.col{
+		margin-left: 5%;
+		margin-right: 0%;
+	}
+}
+
+/*Half Window Web Browser*/
+@media(max-width: 1080px){
+	body{
+		margin: 0%;
+	}
+
+	.nav{
+		margin-left: 0%;
+	}
+
+	.col{
+		margin-left: 23%;
+		width: 50%;
+		height:  auto;
+	}
+
+	.col img{
+		width: 80%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+
+@media(max-width:1020px){
+	body{
+		margin: 10%;
+	}
+
+	.nav{
+		margin-left: -10%;
+	}
+
+	.col{
+		margin-left: 17%;
+		width: 60%;
+		height: auto;
+	}
+}
+
+@media(max-width: 900px){
+	body{
+		margin: 5%;
+	}
+	.nav{
+		margin-left: -5%;
+	}
+	.col{
+		margin-left: 17%;
+		width: 60%;
+		height: auto;
+	}
+
+	h1{
+		margin-top: 20%;
+	}
+}
+
+
+/*Tablet Sized*/
+@media(max-width:856px){
+	body{
+		margin: 0%;
+	}
+	.nav{
+		margin-left: 0%;
+	}
+
+	.col{
+		/*Sizing and Formatting*/
+		width: 60%;
+		height: 40%;
+		float: center;
+
+
+		/*Font*/
+		font-size: 16px;
+
+		/*Border*/
+		margin-left: 17%;
+		/* margin-right: 1%;*/
+		margin-bottom: 4%;
+	}
+	
+	.col img{
+		width: 90%;
+		height: auto;
+		margin: 0%;
+		padding-left: 5%;
+	}
+
+}
+
+/*Smaller Tablet Sized*/
+/*@media(max-width:*/
+
+
+/*Mobile Sized*/
+@media(max-width:520px){
+	.col{
+		width: 90%;
+		height: auto;
+
+		margin-left: 2%;
+		margin-right: 0%;
+		font-size: 15px;
+	}
+	
+}

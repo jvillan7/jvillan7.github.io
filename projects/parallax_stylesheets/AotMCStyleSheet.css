@@ -12,13 +12,6 @@
 
 
 	/*Text Background Colors*/
-	--Necronomicon-bkg-col: #770000;  	/*Dark Red*/
-	--Lullaby-bkg-col: #3c1361; 	  	/*Dark Purple*/
-	--Collateral-bkg-col: #c7882a;		/*Yellow-Gold*/
-	--Bleak-bkg-col: #345eeb;		/*Bold Light Blue*/
-	--GADIG-bkg-col: #2f2f2f;		/*Dark Gray*/	
-	--ExperimentIn-bkg-col: #8656b0;	/*Light Purple*/
-	--MMMM-bkg-col: #c41bc2;		/*Pink*/
 	--AotMC-bkg-col: #2d9de3;		/*Light Blue*/
 }
 
@@ -28,17 +21,7 @@ h1{
 	text-align: center;
 }
 
-/*Contact Info:  will have to adjust margins & padding for screen size later*/
-h2{
-	font-size: 1.25em; /*   20px/16 = 1.25 em*/
-	text-align: center;
-	background-color: var(--header-border-color);
-	
-	margin-left: 20%;
-	margin-right: 20%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-}
+
 
 
 
@@ -213,10 +196,15 @@ body{
 @media(max-width: 1650px){
 	.parallax1st{
 		height: 80%;
+
 	}
 
 	.parallax2nd{
 		height: 80%;
+	}
+
+	.ptext{
+		font-size: 1em;
 	}
 }
 
