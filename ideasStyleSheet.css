@@ -51,34 +51,6 @@ h2{
 	font-size: 1.25em;
 }
 
-/*Tile Images for projects I've worked on*/
-.col img{
-	width: 100%;
-	height: auto;
-	display: block;
-}
-
-/*Columns (that contain tiles) for projects I've worked on*/
-.col{
-	/*Sizing and Formatting*/
-	width: 250px; 		/*width: 25.33%;*/
-	height: 250px;		/*height: 25.33%;*/
-	float: left;
-	padding: 2%; 		/* How much space there is inside the box*/
-
-	display: block;
-
-	/*Font*/
-	font-size: 18px;
-	text-align: center;
-
-	/*Border*/
-	margin-left: 4%;
-	margin-top: 1%;
-	margin-bottom: 2%;		/* Amount of space inbetween each box	 */
-	border: 2px solid white;
-	border-radius: 35px;
-}
 
 
 /*"Body" Background of the webpage*/
@@ -233,7 +205,6 @@ body{
 
 @media(max-width: 900px){
 
-
 	h1{
 		margin-top: 20%;
 	}
@@ -248,12 +219,15 @@ body{
 
 }
 
-/*Smaller Tablet Sized*/
-/*@media(max-width:*/
-
 
 /*Mobile Sized*/
-@media(max-width:520px){
+@media(max-width:700px){
 
-	
+	.bio{
+		font-size: 1em;
+	}
+	.ptext{
+		font-size: 1.25em;
+	}
+
 }
