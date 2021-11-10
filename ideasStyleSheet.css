@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root{
+	--font-color: white;
+	--font: sans-serif;
+
+	/*Index Background Colors*/
+	--background-color: #131313;		/*Dark Gray*/
+	--nav-col: #006635;      			/*Dark Green*/;
+	--header-border-color: #808000; 	/*Olive*/
+	--tile-color: #b4bd80;				/*Bkg color for index's tiles*/
+
+
+	/*Text Background Colors*/
+	--Necronomicon-bkg-col: #770000;  	/*Dark Red*/
+	--Lullaby-bkg-col: #3c1361; 	  	/*Dark Purple*/
+	--Collateral-bkg-col: #c7882a;		/*Yellow-Gold*/
+	--Bleak-bkg-col: #345eeb;			/*Bold Light Blue*/
+	--GADIG-bkg-col: #2f2f2f;			/*Dark Gray*/	
+	--ExperimentIn-bkg-col: #8656b0;	/*Light Purple*/
+	--MMMM-bkg-col: #c41bc2;			/*Pink*/
+	--AotMC-bkg-col: #2d9de3;			/*Light Blue*/
+
+}
+
+/*Titles: the top of the page*/
+h1{
+	font-size: 2.75em;
+	text-align: center;
+	margin-top: 10%;
+}
+
+/*Contact Info:  will have to adjust margins & padding for screen size later*/
+h2{
+	font-size: 1.25em;
+	text-align: center;
+	background-color: var(--nav-col);
+	
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+
+/*Quick Bio*/
+.bio{
+	margin: 4% 20%;
+	text-align: center;
+	font-size: 1.25em;
+}
+
+/*Tile Images for projects I've worked on*/
+.col img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/*Columns (that contain tiles) for projects I've worked on*/
+.col{
+	/*Sizing and Formatting*/
+	width: 250px; 		/*width: 25.33%;*/
+	height: 250px;		/*height: 25.33%;*/
+	float: left;
+	padding: 2%; 		/* How much space there is inside the box*/
+
+	display: block;
+
+	/*Font*/
+	font-size: 18px;
+	text-align: center;
+
+	/*Border*/
+	margin-left: 4%;
+	margin-top: 1%;
+	margin-bottom: 2%;		/* Amount of space inbetween each box	 */
+	border: 2px solid white;
+	border-radius: 35px;
+}
+
+
+/*"Body" Background of the webpage*/
+body{
+	background-color: var(--background-color);
+
+	/*Borders and Alignment*/
+	margin:  0% 0%;
+
+
+	/*Font*/
+	color: var(--font-color);
+	font-family: var(--font);
+}
+
+
+
+/*Project Descriptions*/
+.ptext{
+	background-color: #222222;
+	margin: 0% 5%;
+	padding: 2%;
+
+	font-size: 1.15em;
+	color: white;
+	border: 1px none white;
+	border-radius: 5px;
+	font-weight: lighter;
+}
+
+
+
+.parallax{
+	height: 100%; /*this should be 100%*/
+	width: auto;
+	padding:  7% 0%;
+	margin-bottom: 0.5%;
+
+	position: relative;
+	background-attachment: fixed; /* This is what makes it parallax*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+/*Navigation Bar*/
+.nav{
+	background-color: var(--nav-col);
+	
+
+	/*border: 2px none none;
+	/*border-radius: 10px;*/
+	
+
+	top: 0;
+	position: fixed;
+	overflow: hidden;
+
+	width: 100%;
+	height: auto;
+	
+}
+
+
+.nav a{
+	display: block;
+	float: left;
+	text-align: center;
+
+}
+
+.nav a:hover{
+	color:  black;
+}
+
+.nav li{
+	display:  inline-block;
+	font-size: 1.5em;
+	padding: 1% 2%;
+
+}
+
+
+
+
+
+/*******************************************************************/
+/*******************************************************************/
+/*              Adapting for different screen sizes                */
+/*******************************************************************/
+/*******************************************************************/
+
+
+
+
+
+
+/*~ >3/4ths of a large screen'd Web Browser*/
+@media(max-width:1700px){
+
+}
+
+/*Both the 1650 and the 1580 are just inbetween ~ >3/4ths of the screen and ~3/4ths of the screen*/
+@media(max-width: 1650px){
+
+}
+
+/*Both the 1650 and the 1580 are just inbetween ~ >3/4ths of the screen and ~3/4ths of the screen*/
+@media(max-width: 1580px){
+
+}
+
+@media(max-width: 1520px){
+
+}
+
+/*Smaller Web Browser*/
+@media(max-width:1500px){
+
+	
+}
+
+@media(max-width: 1480px){
+
+}
+
+@media(max-width: 1200px){
+
+}
+
+/*Inbetween Half Window and Smaller Web Browser*/
+@media(max-width:1100px){
+}
+
+/*Half Window Web Browser*/
+@media(max-width: 1080px){
+
+}
+
+
+
+@media(max-width:1020px){
+
+
+}
+
+@media(max-width: 900px){
+
+
+	h1{
+		margin-top: 20%;
+	}
+}
+
+
+/*Tablet Sized*/
+@media(max-width:856px){
+	.ptext{
+		margin: 0%;
+	}
+
+}
+
+/*Smaller Tablet Sized*/
+/*@media(max-width:*/
+
+
+/*Mobile Sized*/
+@media(max-width:520px){
+
+	
+}
