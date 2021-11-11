@@ -6,7 +6,7 @@
 	--font: sans-serif;
 
 	/*Index Background Colors*/
-	--background-color: #131313;		/*Dark Gray*/
+	--background-color: #FFFFFF;		/*Dark Gray*/
 	--nav-col: #006635;      			/*Dark Green*/;
 	--header-border-color: #808000; 	/*Olive*/
 	--tile-color: #b4bd80;				/*Bkg color for index's tiles*/
@@ -26,29 +26,19 @@
 
 /*Titles: the top of the page*/
 h1{
-	font-size: 2.75em;
+	font-size: 4em;
 	text-align: center;
-	margin-top: 10%;
-}
-
-/*Contact Info:  will have to adjust margins & padding for screen size later*/
-h2{
-	font-size: 1.25em;
-	text-align: center;
-	background-color: var(--nav-col);
-	
-	margin-left: 20%;
-	margin-right: 20%;
-	padding-top: 1%;
-	padding-bottom: 1%;
+	text-shadow: 4px 4px #000000;
 }
 
 
-/*Quick Bio*/
+/*Contact Info Bio*/
 .bio{
-	margin: 4% 20%;
-	text-align: center;
+	padding: 1.5% 2%;
+	margin: 5% 0%;
 	font-size: 1.25em;
+	color: black;
+	text-align: center;
 }
 
 
@@ -56,55 +46,38 @@ h2{
 /*"Body" Background of the webpage*/
 body{
 	background-color: var(--background-color);
-
-	/*Borders and Alignment*/
-	margin:  0% 0%;
-
+	margin: 0%;
 
 	/*Font*/
 	color: var(--font-color);
 	font-family: var(--font);
+
 }
 
-
-
-/*Project Descriptions*/
-.ptext{
-	background-color: #222222;
-	margin: 0% 5%;
-	padding: 2%;
-
-	font-size: 1.15em;
-	color: white;
-	border: 1px none white;
-	border-radius: 5px;
-	font-weight: lighter;
-}
 
 
 
 .parallax{
 	height: 100%; /*this should be 100%*/
 	width: auto;
-	padding:  7% 0%;
-	margin-bottom: 0.5%;
 
 	position: relative;
 	background-attachment: fixed; /* This is what makes it parallax*/
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	padding-top: 3%;
+	padding-bottom: 5%;
 }
 
 
 
 
 
-/*******************************************************************/
-/*******************************************************************/
-/*                        Navigation Bar                           */
-/*******************************************************************/
-/*******************************************************************/
+
+
+/*Navigation Bar*/
 .nav{
 	background-color: var(--nav-col);
 	
@@ -113,7 +86,7 @@ body{
 	/*border-radius: 10px;*/
 	
 
-	top: 0;
+	
 	position: fixed;
 	overflow: hidden;
 
@@ -131,17 +104,15 @@ body{
 }
 
 .nav a:hover{
-
+	color:  black;
 }
 
 .nav li{
-	display: inline-block;
+	display:  inline-block;
 	font-size: 1.5em;
 	padding: 1% 2%;
 
 }
-
-
 
 
 
@@ -183,44 +154,63 @@ body{
 	
 }
 
+@media(max-width: 1480px){
+
+}
+
+@media(max-width: 1200px){
+
+}
 
 /*Inbetween Half Window and Smaller Web Browser*/
 @media(max-width:1100px){
+
 }
 
 /*Half Window Web Browser*/
 @media(max-width: 1080px){
+	body{
+		margin: 0%;
+	}
+
+	.nav{
+		margin-left: 0%;
+	}
 
 }
 
 
+
+@media(max-width:1020px){
+
+}
 
 @media(max-width: 900px){
 
 	h1{
 		margin-top: 20%;
-		font-size: 2em;
 	}
 }
 
 
 /*Tablet Sized*/
 @media(max-width:856px){
-	.ptext{
+	body{
 		margin: 0%;
 	}
+	.nav{
+		margin-left: 0%;
+	}
+
 
 }
 
+/*Smaller Tablet Sized*/
+/*@media(max-width:*/
+
 
 /*Mobile Sized*/
-@media(max-width:700px){
+@media(max-width:520px){
 
-	.bio{
-		font-size: 1em;
-	}
-	.ptext{
-		font-size: 1.25em;
-	}
-
+	
 }
