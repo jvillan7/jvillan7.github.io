@@ -2,7 +2,7 @@
 /* CSS Document */
 
 :root{
-	--font-color: white;
+	--font-color: black;
 	--font: sans-serif;
 
 	/*Index Background Colors*/
@@ -26,8 +26,9 @@
 
 /*Titles: the top of the page*/
 h1{
-	font-size: 6em; /*   96px/16 = 6 em*/
+	font-size: 4.5em; /*   96px/16 = 6 em*/
 	text-align: center;
+	color: white;
 	text-shadow: 4px 4px #000000;
 }
 
@@ -36,6 +37,7 @@ h2{
 	font-size: 2em;
 	text-align: center;
 	text-shadow: 2px 2px #000000;
+	color: white;
 }
 
 
@@ -48,7 +50,7 @@ h2{
 
 	width: 100%;
 	height: auto;
-	
+	margin-bottom: 15%;
 }
 
 
@@ -64,7 +66,7 @@ h2{
 }
 
 .nav li{
-	display:  inline-block;
+	display: inline-block;
 	font-size: 1.5em;
 	padding: 1% 2%;
 
@@ -113,6 +115,32 @@ body{
 
 
 
+.block{
+	padding: 5% 4%;
+	margin-bottom: 5%;
+	font-size: 1.5em;
+	
+	height: 10em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.block p{
+margin: 0 2%;
+}
+
+.block img{
+	width: 30%;
+	height: auto;
+}
+
+
+
+
+
+
 
 
 
@@ -121,71 +149,7 @@ body{
 /*              Adapting for different screen sizes                */
 /*******************************************************************/
 /*******************************************************************/
-
-
-
-
-
-
-/*~ >3/4ths of a large screen'd Web Browser*/
-@media(max-width:1700px){
-
-
-}
-
-/*Both the 1650 and the 1580 are just inbetween ~ >3/4ths of the screen and ~3/4ths of the screen*/
-@media(max-width: 1650px){
-
-
-}
-
-/*Both the 1650 and the 1580 are just inbetween ~ >3/4ths of the screen and ~3/4ths of the screen*/
-@media(max-width: 1580px){
-
-
-}
-
-@media(max-width: 1520px){
-
-
-}
-
-/*Smaller Web Browser*/
-@media(max-width:1500px){
-
-
-	
-}
-
-@media(max-width: 1480px){
-
-
-}
-
-@media(max-width: 1200px){
-
-
-}
-
-/*Inbetween Half Window and Smaller Web Browser*/
-@media(max-width:1100px){
-
-
-}
-
-/*Half Window Web Browser*/
-@media(max-width: 1080px){
-
-
-}
-
-
-
-@media(max-width:1020px){
-
-}
-
-@media(max-width: 900px){
+@media(max-width: 1600px){
 
 }
 
@@ -195,14 +159,20 @@ body{
 	.bio{
 		padding: 2% 0%;
 	}
-
+	h1{
+		margin: 15% 0%;
+	}
 }
 
-/*Smaller Tablet Sized*/
-/*@media(max-width:*/
 
 
 /*Mobile Sized*/
-@media(max-width:520px){
-
+@media(max-width:600px){
+	.block{
+		font-size: 1em;
+	}
+	.block img{
+		width: 50%;
+		height: auto;
+	}
 }
