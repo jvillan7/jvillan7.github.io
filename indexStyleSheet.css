@@ -41,40 +41,6 @@ h2{
 }
 
 
-/*Navigation Bar*/
-.nav{
-	background-color: var(--nav-col);
-	
-	position: fixed;
-	overflow: hidden;
-
-	width: 100%;
-	height: auto;
-	margin-bottom: 15%;
-}
-
-
-.nav a{
-	display: block;
-	float: left;
-	text-align: center;
-
-}
-
-.nav a:hover{
-	color:  black;
-}
-
-.nav li{
-	display: inline-block;
-	font-size: 1.5em;
-	padding: 1% 2%;
-
-}
-
-/*Contains both the Profile Pic and Bio*/
-
-
 /*Quick Bio*/
 .bio{
 	padding: 3% 2%;
@@ -135,6 +101,50 @@ margin: 0 2%;
 	width: 30%;
 	height: auto;
 }
+
+
+
+
+
+
+
+/*******************************************************************/
+/*******************************************************************/
+/*                        Navigation Bar                           */
+/*******************************************************************/
+/*******************************************************************/
+.nav{
+	background-color: var(--nav-col);
+	
+	position: fixed;
+	overflow: hidden;
+
+	width: 100%;
+	height: auto;
+	margin-bottom: 15%;
+}
+
+
+.nav a{
+	display: block;
+	float: left;
+	text-align: center;
+
+}
+
+.nav a:hover{
+	color:  black;
+}
+
+.nav li{
+	display: inline-block;
+	font-size: 1.5em;
+	padding: 1% 2%;
+
+}
+
+
+
 
 
 

@@ -12,14 +12,7 @@
 
 
 	/*Text Background Colors*/
-	--Necronomicon-bkg-col: #770000;  	/*Dark Red*/
 	--Lullaby-bkg-col: #3c1361; 	  	/*Dark Purple*/
-	--Collateral-bkg-col: #c7882a;		/*Yellow-Gold*/
-	--Bleak-bkg-col: #345eeb;		/*Bold Light Blue*/
-	--GADIG-bkg-col: #2f2f2f;		/*Dark Gray*/	
-	--ExperimentIn-bkg-col: #8656b0;	/*Light Purple*/
-	--MMMM-bkg-col: #c41bc2;		/*Pink*/
-	--AotMC-bkg-col: #2d9de3;		/*Light Blue*/
 }
 
 /*Titles: the top of the page*/
@@ -44,7 +37,7 @@ h2{
 
 /*Project Descriptions - text boxes will have to adjust for page size*/
 .ptext{
-	background-color: var(--Necronomicon-bkg-col);
+	background-color: var(--Lullaby-bkg-col);
 	margin-left: 0%;
 	margin-right: 0%;
 	padding: 2%;
@@ -116,6 +109,55 @@ body{
 }
 
 
+.MainLogo img{
+	width: 40%;
+	margin: 5% 30% 1%;
+	text-align: center;
+}
+
+
+
+
+
+/*******************************************************************/
+/*******************************************************************/
+/*                        Navigation Bar                           */
+/*******************************************************************/
+/*******************************************************************/
+
+.nav{
+	background-color: var(--background-color);
+
+	top: 0;
+	position: fixed;
+	overflow: hidden;
+
+	width: 100%;
+	height: auto;
+
+	
+}
+
+
+.nav a{
+	display: block;
+	float: left;
+	text-align: center;
+
+}
+
+.nav a:hover{
+	color:  black;
+}
+
+.nav li{
+	display:  inline-block;
+	font-size: 1.5em;
+	padding: 1% 2%;
+
+}
+
+
 
 
 
@@ -127,12 +169,6 @@ body{
 /*******************************************************************/
 /*******************************************************************/
 
-
-
-
-
-
-
 /*Half Size (snapped to left/right*/
 @media(max-width:1200px){
 	.parallax{
@@ -142,6 +178,10 @@ body{
 		margin-left: 5%;
 		margin-right: 5%;
 	}
+	.MainLogo img{
+		width: 60%;
+		margin: 10% 30% 0%;
+	}
 }
 
 /*Smaller Web Browser*/
@@ -149,6 +189,10 @@ body{
 	.parallax{
 		height: 80%;
 	}
+	.MainLogo img{
+		width: 80%;
+		margin: 15% 30% 0%;
+	}	
 }
 
 
@@ -166,5 +210,8 @@ body{
 	.parallax{
 		height: 60%;
 	}
+	.MainLogo img{
+		margin: 20% 30% 0%;
+	}	
 
 }
