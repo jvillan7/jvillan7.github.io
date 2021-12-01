@@ -81,9 +81,9 @@ body{
 
 
 .MainLogo img{
-	width: 50%;
+	width: 40%;
 	height: auto;
-	margin: 0% 25% 1%;
+	margin: 0% 30% 1%;
 	text-align: center;
 }
 
@@ -107,8 +107,8 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	padding-top: 10%;
-	padding-bottom: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 
