@@ -6,7 +6,9 @@
 	--font: sans-serif;
 
 	/*Index Background Colors*/
-	--background-color: #006635;      	/*Dark Green*/
+	--background-color: #131313;		/*Dark Gray*/
+	--nav-col: #008857;           /*Green*/;
+	--hov-col: #007768;           /*Lighter Green*/
 	--header-border-color: #636125;   	/*Dark Gold*/
 	--tile-color: #b4bd80;			/*Bkg color for index's tiles*/
 
@@ -60,7 +62,7 @@ body{
 	background-color: var(--background-color); /* Dark Green */
 
 	/*Borders and Alignment*/
-	margin: 0% 10%; /*top/bot %   left/right %*/
+	margin: 0% 0%; /*top/bot %   left/right %*/
 
 
 	/*Font*/
@@ -131,39 +133,138 @@ body{
 /*                        Navigation Bar                           */
 /*******************************************************************/
 /*******************************************************************/
+.header {
+  background-color: var(--nav-col);
+  color: white;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 
-.nav{
-	background-color: var(--background-color);
+  margin: 0% 0%;
+}
 
-	top: 0;
-	position: fixed;
-	overflow: hidden;
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: var(--nav-col);
+}
 
-	width: 100%;
-	height: auto;
+.header li a {
+  display: block;
+  padding: 15px 10px;
+  border-left: 1px solid #f4f4f4;
+  text-decoration: none;
+}
 
-	
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: var(--hov-col);
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 1.5em;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 15px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
 }
 
 
-.nav a{
-	display: block;
-	float: left;
-	text-align: center;
 
+/*Menu Icon*/
+
+.header .menu-btn {
+  display: none;
 }
 
-.nav a:hover{
-	color:  black;
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
 }
 
-.nav li{
-	display:  inline-block;
-	font-size: 1.5em;
-	padding: 1% 2%;
-
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
 }
 
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+/*Anything NOT Mobile Sized (i.e. tablet and larger)*/
+@media (min-width: 780px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
 
 
 
@@ -204,10 +305,7 @@ body{
 
 /*Half Size (snapped to left/right)*/
 @media(max-width:1200px){
-	body{
-		margin-left: 5%;
-		margin-right: 5%;
-	}
+
 	.MainLogo img{
 		width: 40%;
 		margin: 5% 30% 0%;
@@ -232,12 +330,9 @@ body{
 
 /*Mobile Sized*/
 @media(max-width:770px){
-
-	body{
-		margin: 0% 0%;
-	}
 	.parallaxTitle{
-		height: 35%;
+		height: 25%;
+		padding: 0%;
 	}
 
 	.ptext{
@@ -252,11 +347,4 @@ body{
 	.MainLogo img{
 		margin-top: 15%;
 	}
-	body{
-		margin: 0% 0%; /*top/bot %   left/right %*/
-	}
-	.parallaxTitle{
-		height: 30%;
-	}
-
 }

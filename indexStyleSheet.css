@@ -7,7 +7,8 @@
 
 	/*Index Background Colors*/
 	--background-color: #131313;		/*Dark Gray*/
-	--nav-col: #006635;      			/*Dark Green*/;
+	--nav-col: #008857;      			/*Green*/;
+	--hov-col: #007768;      			/*Lighter Green*/;
 	--header-border-color: #808000; 	/*Olive*/
 	--tile-color: #b4bd80;				/*Bkg color for index's tiles*/
 
@@ -104,56 +105,6 @@ margin: 0 2%;
 
 
 
-
-
-
-
-/*******************************************************************/
-/*******************************************************************/
-/*                        Navigation Bar                           */
-/*******************************************************************/
-/*******************************************************************/
-.nav{
-	background-color: var(--nav-col);
-	
-	position: fixed;
-	overflow: hidden;
-
-	width: 100%;
-	height: auto;
-	margin-bottom: 15%;
-}
-
-
-.nav a{
-	display: block;
-	float: left;
-	text-align: center;
-
-}
-
-.nav a:hover{
-	color:  black;
-}
-
-.nav li{
-	display: inline-block;
-	font-size: 1.5em;
-	padding: 1% 2%;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
 /*******************************************************************/
 /*******************************************************************/
 /*              Adapting for different screen sizes                */
@@ -173,6 +124,7 @@ margin: 0 2%;
 		margin: 15% 0%;
 	}
 }
+
 
 
 
