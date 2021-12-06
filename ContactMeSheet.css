@@ -78,91 +78,11 @@ body{
 
 /*******************************************************************/
 /*******************************************************************/
-/*                        Navigation Bar                           */
-/*******************************************************************/
-/*******************************************************************/
-.nav{
-	background-color: var(--nav-col);
-	
-	position: fixed;
-	overflow: hidden;
-
-	width: 100%;
-	height: auto;
-	
-}
-
-
-.nav a{
-	display: block;
-	float: left;
-	text-align: center;
-
-}
-
-.nav a:hover{
-	color:  black;
-}
-
-.nav li{
-	display:  inline-block;
-	font-size: 1.5em;
-	padding: 1% 2%;
-
-}
-
-
-
-
-
-/*******************************************************************/
-/*******************************************************************/
 /*              Adapting for different screen sizes                */
 /*******************************************************************/
 /*******************************************************************/
 
 
-
-
-
-
-/*~ >3/4ths of a large screen'd Web Browser*/
-@media(max-width:1700px){
-
-}
-
-/*Both the 1650 and the 1580 are just inbetween ~ >3/4ths of the screen and ~3/4ths of the screen*/
-@media(max-width: 1650px){
-
-}
-
-/*Both the 1650 and the 1580 are just inbetween ~ >3/4ths of the screen and ~3/4ths of the screen*/
-@media(max-width: 1580px){
-
-}
-
-@media(max-width: 1520px){
-
-}
-
-/*Smaller Web Browser*/
-@media(max-width:1500px){
-
-	
-}
-
-@media(max-width: 1480px){
-
-}
-
-@media(max-width: 1200px){
-
-}
-
-/*Inbetween Half Window and Smaller Web Browser*/
-@media(max-width:1100px){
-
-}
 
 /*Half Window Web Browser*/
 @media(max-width: 1080px){
@@ -177,10 +97,6 @@ body{
 }
 
 
-
-@media(max-width:1020px){
-
-}
 
 @media(max-width: 900px){
 
@@ -202,8 +118,6 @@ body{
 
 }
 
-/*Smaller Tablet Sized*/
-/*@media(max-width:*/
 
 
 /*Mobile Sized*/
