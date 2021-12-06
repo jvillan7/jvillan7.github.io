@@ -250,7 +250,7 @@ body{
 
 
 /*Anything NOT Mobile Sized (i.e. tablet and larger)*/
-@media (min-width: 900px) {
+@media (min-width: 1080px) {
   .header li {
     float: left;
   }
