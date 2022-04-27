@@ -6,22 +6,23 @@
 	--font: sans-serif;
 
 	/*Index Background Colors*/
-	--background-color: #131313;		/*Dark Gray*/
-	--nav-col: #008857;      			/*Green*/;
-	--hov-col: #007768;      			/*Lighter Green*/;
-	--header-border-color: #808000; 	/*Olive*/
-	--tile-color: #b4bd80;				/*Bkg color for index's tiles*/
+	--background-color: #131313;					/*Dark Gray*/
+	--nav-col: #008857;      							/*Green*/;
+	--hov-col: #007768;      							/*Lighter Green*/;
+	--header-border-color: #808000; 			/*Olive*/
+	--tile-color: #b4bd80;								/*Bkg color for index's tiles*/
 
 
 	/*Text Background Colors*/
-	--Necronomicon-bkg-col: #770000;  	/*Dark Red*/
-	--Lullaby-bkg-col: #3c1361; 	  	/*Dark Purple*/
-	--Collateral-bkg-col: #c7882a;		/*Yellow-Gold*/
-	--Bleak-bkg-col: #345eeb;			/*Bold Light Blue*/
-	--GADIG-bkg-col: #2f2f2f;			/*Dark Gray*/	
-	--ExperimentIn-bkg-col: #8656b0;	/*Light Purple*/
-	--MMMM-bkg-col: #c41bc2;			/*Pink*/
-	--AotMC-bkg-col: #2d9de3;			/*Light Blue*/
+	--Necronomicon-bkg-col: #770000;  		/*Dark Red*/
+	--Lullaby-bkg-col: #3c1361; 			  	/*Dark Purple*/
+	--Collateral-bkg-col: #c7882a;				/*Yellow-Gold*/
+	--Bleak-bkg-col: #345eeb;							/*Bold Light Blue*/
+	--GADIG-bkg-col: #2f2f2f;							/*Dark Gray*/	
+	--ExperimentIn-bkg-col: #8656b0;			/*Light Purple*/
+	--MMMM-bkg-col: #c41bc2;							/*Pink*/
+	--AotMC-bkg-col: #2d9de3;							/*Light Blue*/
+	--Arcade-col:  #21bc21;								/*Lime Green*/
 
 }
 
