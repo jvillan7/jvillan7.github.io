@@ -22,8 +22,9 @@
 	--ExperimentIn-bkg-col: #8656b0;		/*Light Purple*/
 	--MMMM-bkg-col: #c41bc2;						/*Pink*/
 	--AotMC-bkg-col: #2d9de3;						/*Light Blue*/
-	--Arcade-col:  #20bb20;								/*Lime Green*/
-	--Writing-col:  #6d00c1;							/*Saturated Purple*/
+	--Arcade-col:  #20bb20;							/*Lime Green*/
+	--Writing-col:  #6d00c1;						/*Saturated Purple*/
+	--Bar-col:  #D3D3D3;								/*Light Gray*/
 }
 
 /*Titles: the top of the page*/
