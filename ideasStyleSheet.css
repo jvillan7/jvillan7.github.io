@@ -74,7 +74,7 @@ body{
 	margin: 0% 5%;
 	padding: 2%;
 
-	font-size: 1.5em;
+	font-size: 1.1em;
 	color: white;
 	border: 1px none white;
 	border-radius: 5px;
@@ -173,7 +173,7 @@ body{
 		font-size: 1em;
 	}
 	.ptext{
-		font-size: 1.25em;
+		font-size: 1.15em;
 	}
 
 }
