@@ -37,8 +37,8 @@ h2{
 	text-align: center;
 	background-color: var(--nav-col);
 	
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 18%;
+	margin-right: 18%;
 	padding-top: 1%;
 	padding-bottom: 1%;
 }
@@ -71,7 +71,7 @@ body{
 /*Project Descriptions*/
 .ptext{
 	background-color: #222222;
-	margin: 0% 5%;
+	margin: 0% 2%;
 	padding: 2%;
 
 	font-size: 1.1em;
@@ -85,7 +85,7 @@ body{
 .parallax{
 	height: 100%; /*this should be 100%*/
 	width: auto;
-	padding:  7% 0%;
+	padding:  5% 0%;
 	margin-bottom: 0.5%;
 
 	position: relative;
